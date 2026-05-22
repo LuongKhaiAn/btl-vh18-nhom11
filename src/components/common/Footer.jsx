@@ -1,18 +1,41 @@
-import "../../App.css";
+import React from "react";
+import { Plane, Phone, Mail } from "lucide-react";
 
-// Footer xanh navy dung chung cho trang home.
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div>
-        <h2>VietJourney</h2>
-        <p>Kết nối hành trình nghỉ dưỡng, di chuyển và trải nghiệm Việt Nam.</p>
-      </div>
+    <footer className="footer-block">
+      <div className="footer-inner">
+        <div className="footer-column">
+          <a className="footer-logo" href="#">
+            <span className="footer-logo-icon">
+              <Plane />
+            </span>
+            TravelGo
+          </a>
+          <p className="footer-copy">
+            Nền tảng đặt vé du lịch hàng đầu Việt Nam, mang đến trải nghiệm sang trọng và tiện lợi cho hành trình của bạn.
+          </p>
+        </div>
 
-      <div className="footerLinks">
-        <a href="#dich-vu">Dịch vụ</a>
-        <a href="#uu-dai">Ưu đãi</a>
-        <a href="#lien-he">Liên hệ</a>
+        <div className="footer-column">
+          <h3 className="footer-title">Liên hệ</h3>
+          <p className="footer-text">
+            <Phone className="footer-icon" /> 1900 1234
+          </p>
+          <p className="footer-text">
+            <Mail className="footer-icon" /> support@travelgo.vn
+          </p>
+        </div>
+
+        <div className="footer-column">
+          <h3 className="footer-title">Dịch vụ</h3>
+          <ul className="footer-list">
+            <li>Đặt phòng khách sạn</li>
+            <li>Tour du lịch</li>
+            <li>Thuê xe tự lái</li>
+            <li>Vé máy bay</li>
+          </ul>
+        </div>
       </div>
     </footer>
   );

@@ -1,8 +1,8 @@
 import "./App.css";
-import HomeMenu from "./pages/home-page/home-menu";
+import HomePage from "./pages/home-page/home-menu";
 
 function App() {
-  return <HomeMenu />;
+  return <HomePage />;
 }
 
 export default App;

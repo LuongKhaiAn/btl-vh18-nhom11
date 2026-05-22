@@ -1,27 +1,44 @@
-import "../../App.css";
+import React, { useState } from "react";
+import { Plane, Ticket } from "lucide-react";
 
-// Danh sach link hien thi tren thanh dieu huong.
-const navItems = ["Trang chu", "Dich vu", "Uu dai", "Lien he"];
+const navItems = ["Trang chủ", "Khách sạn", "Du lịch", "Xe tự lái", "Máy bay"];
 
 const Navbar = () => {
+  const [activeItem, setActiveItem] = useState("Trang chủ");
+
   return (
-    <header className="navbar">
-      <a className="brand" href="#home" aria-label="VietJourney home">
-        <span className="brandMark">VJ</span>
-        <span>VietJourney</span>
-      </a>
+    <header className="header-bar">
+      <div className="header-inner">
+        <a className="nav-logo" href="#">
+          <span className="nav-logo-icon" aria-hidden="true">
+            <Plane />
+          </span>
+          <span className="nav-logo-text">TravelGo</span>
+        </a>
 
-      <nav className="navLinks" aria-label="Main navigation">
-        {navItems.map((item) => (
-          <a key={item} href={`#${item.toLowerCase().replaceAll(" ", "-")}`}>
-            {item}
-          </a>
-        ))}
-      </nav>
+        <nav className="nav-menu">
+          {navItems.map((item) => (
+            <button
+              key={item}
+              className={`nav-item ${activeItem === item ? "active" : ""}`}
+              type="button"
+              onClick={() => setActiveItem(item)}
+            >
+              {item}
+            </button>
+          ))}
+        </nav>
 
-      <button className="navButton" type="button">
-        Dat lich
-      </button>
+        <div className="nav-actions">
+          <button className="action-pill" type="button">
+            <Ticket size={16} />
+            Vé của tôi
+          </button>
+          <button className="action-button" type="button">
+            Đăng nhập
+          </button>
+        </div>
+      </div>
     </header>
   );
 };

@@ -1,8 +1,8 @@
 import Footer from "../../components/common/Footer";
 import Navbar from "../../components/common/Navbar";
 import HeroSection from "../../components/layout/HeroSection";
+import HerSection from "../../components/layout/HerSection";
 import ServiceSection from "../../components/layout/ServiceSection";
-import ListingSection from "../../components/layout/ListingSection";
 
 // Gom cac section cua trang home theo dung cau truc src/pages/home-page.
 const HomeMenu = () => {
@@ -12,7 +12,7 @@ const HomeMenu = () => {
       <main>
         <HeroSection />
         <ServiceSection />
-        <ListingSection />
+        <HerSection />
       </main>
       <Footer />
     </>
