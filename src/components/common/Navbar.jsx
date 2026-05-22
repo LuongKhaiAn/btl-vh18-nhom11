@@ -1,42 +1,59 @@
-import React, { useState } from "react";
-import { Plane, Ticket } from "lucide-react";
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { Plane, Ticket, User } from "lucide-react";
+// Đi lùi 3 tầng: common -> components -> src -> data
+import database from "../../data/database.json";
 
-const navItems = ["Trang chủ", "Khách sạn", "Du lịch", "Xe tự lái", "Máy bay"];
+const iconMap = {
+  plane: <Plane />,
+  ticket: <Ticket size={16} />,
+  user: <User size={16} />,
+};
 
 const Navbar = () => {
-  const [activeItem, setActiveItem] = useState("Trang chủ");
+  const { logo, links = [], actions = [] } = database.navigation || {};
 
   return (
     <header className="header-bar">
       <div className="header-inner">
-        <a className="nav-logo" href="#">
+        {/* Logo click quay về Trang chủ */}
+        <NavLink className="nav-logo" to="/">
           <span className="nav-logo-icon" aria-hidden="true">
-            <Plane />
+            {iconMap.plane}
           </span>
-          <span className="nav-logo-text">TravelGo</span>
-        </a>
+          <span className="nav-logo-text">{logo || "TravelGo"}</span>
+        </NavLink>
 
+        {/* Menu điều hướng chính */}
         <nav className="nav-menu">
-          {navItems.map((item) => (
-            <button
-              key={item}
-              className={`nav-item ${activeItem === item ? "active" : ""}`}
-              type="button"
-              onClick={() => setActiveItem(item)}
+          {links.map((link) => (
+            <NavLink
+              key={link.path}
+              to={link.path}
+              className={({ isActive }) => `nav-item ${isActive ? "active" : ""}`}
             >
-              {item}
-            </button>
+              {link.label}
+            </NavLink>
           ))}
         </nav>
 
+        {/* Khối chức năng phụ */}
         <div className="nav-actions">
-          <button className="action-pill" type="button">
-            <Ticket size={16} />
-            Vé của tôi
-          </button>
-          <button className="action-button" type="button">
-            Đăng nhập
-          </button>
+          {actions.map((action, index) => {
+            const isPill = action.icon === "ticket";
+            const btnClass = isPill ? "action-pill" : "action-button";
+
+            return (
+              <NavLink
+                key={action.path || index}
+                to={action.path}
+                className={btnClass}
+              >
+                {action.icon && iconMap[action.icon]}
+                <span>{action.label}</span>
+              </NavLink>
+            );
+          })}
         </div>
       </div>
     </header>

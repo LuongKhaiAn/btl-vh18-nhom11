@@ -1,7 +1,7 @@
 import React from "react";
 import { Search } from "lucide-react";
-
 const HeroSection = () => {
+
   return (
     <section className="hero-section">
       <div className="hero-overlay" />
@@ -9,13 +9,14 @@ const HeroSection = () => {
         <h1 className="hero-title">Khám Phá Thế Giới</h1>
         <h1 className="hero-title hero-highlight">Trải Nghiệm Đẳng Cấp</h1>
         <p className="hero-copy">
-          Đặt khách sạn, vé du lịch, thuê xe tự lái và vé máy bay — tất cả trong một nền tảng duy nhất.
+          Đặt khách sạn, vé du lịch, thuê xe tự lái và vé máy bay — tất cả trong
+          một nền tảng duy nhất.
         </p>
       </div>
 
       <div className="hero-search-card">
         <div className="hero-tabs">
-          <button className="hero-tab active" type="button">
+          <button className="hero-tab" type="button">
             Khách sạn
           </button>
           <button className="hero-tab" type="button">
