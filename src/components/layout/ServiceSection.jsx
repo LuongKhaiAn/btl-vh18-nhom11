@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Bed, Globe2, Car, Plane, ChevronRight } from "lucide-react";
 import DataBase from "../../DataBase.json";
+import { SERVICE_PATHS } from "../../config/pages";
 
-const ServiceSection = ({ onNavigate }) => {
+const ServiceSection = () => {
+  const navigate = useNavigate();
   const [_selectedService, setSelectedService] = useState(null);
 
   const services = [
@@ -38,7 +41,8 @@ const ServiceSection = ({ onNavigate }) => {
 
   const handleViewMore = (serviceKey) => {
     setSelectedService(serviceKey);
-    onNavigate?.(serviceKey);
+    const path = SERVICE_PATHS[serviceKey];
+    if (path) navigate(path);
   };
 
   return (

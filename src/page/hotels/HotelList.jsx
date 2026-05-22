@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Star, MapPin, CheckCircle } from "lucide-react";
 import axios from "axios";
+import { getProductDetailPath } from "../../config/products";
 
 const HotelList = () => {
+  const navigate = useNavigate();
   // 1. Tạo state để lưu trữ dữ liệu khách sạn từ API
   const [hotels, setHotels] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -28,6 +31,12 @@ const HotelList = () => {
     }).format(price);
   };
 
+  const goDetail = (id, scrollToBook = false) => {
+    navigate(getProductDetailPath("hotels", id), {
+      state: scrollToBook ? { scrollToBook: true } : undefined,
+    });
+  };
+
   if (loading) {
     return <div className="text-center mt-5">Đang tải danh sách khách sạn...</div>;
   }
@@ -43,7 +52,13 @@ const HotelList = () => {
       <div className="row">
         {hotels.map((hotel) => (
           <div className="col-md-6 col-lg-4 mb-4 d-flex" key={hotel.id}>
-            <div className="card hotel-card w-100 shadow-sm d-flex flex-column justify-content-between p-2">
+            <div
+              className="card hotel-card w-100 shadow-sm d-flex flex-column justify-content-between p-2 product-card-clickable"
+              role="button"
+              tabIndex={0}
+              onClick={() => goDetail(hotel.id)}
+              onKeyDown={(e) => e.key === "Enter" && goDetail(hotel.id)}
+            >
               <div>
                 <div className="hotel-image-wrapper position-relative" style={{ height: "200px", overflow: "hidden" }}>
                   <img
@@ -90,7 +105,14 @@ const HotelList = () => {
                   <span className="price-label text-muted small block">Giá từ:</span>
                   <h5 className="hotel-price text-danger fw-bold mb-0">{formatPrice(hotel.priceFrom)}</h5>
                 </div>
-                <button className="btn btn-primary btn-book btn-sm px-3" type="button">
+                <button
+                  className="btn btn-primary btn-book btn-sm px-3"
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    goDetail(hotel.id, true);
+                  }}
+                >
                   Đặt phòng ngay
                 </button>
               </div>

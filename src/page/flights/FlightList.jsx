@@ -1,9 +1,12 @@
 import { Row, Col, Card, Button } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { getProductDetailPath } from "../../config/products";
 
 function FlightList() {
+  const navigate = useNavigate();
   const [flights, setFlights] = useState([]);
   const [search, setSearch] = useState("");
 
@@ -31,6 +34,12 @@ function FlightList() {
     (f.airline || "").toLowerCase().includes(search.toLowerCase()),
   );
 
+  const goDetail = (id, scrollToBook = false) => {
+    navigate(getProductDetailPath("flights", id), {
+      state: scrollToBook ? { scrollToBook: true } : undefined,
+    });
+  };
+
   return (
     <div className="container mt-3">
       <h1 className="text-center mb-4">Vé Máy Bay Giá Tốt</h1>
@@ -49,7 +58,13 @@ function FlightList() {
       <Row>
         {chonFlight.map((f) => (
           <Col md={4} key={f.id} className="d-flex">
-            <Card className="mb-4 p-2 w-100 shadow-sm">
+            <Card
+              className="mb-4 p-2 w-100 shadow-sm product-card-clickable"
+              role="button"
+              tabIndex={0}
+              onClick={() => goDetail(f.id)}
+              onKeyDown={(e) => e.key === "Enter" && goDetail(f.id)}
+            >
               <div style={{ height: "140px", overflow: "hidden" }}>
                 <Card.Img
                   variant="top"
@@ -77,7 +92,16 @@ function FlightList() {
                     Giá từ: {formatPrice(f.priceFrom)}
                   </p>
                 </div>
-                <Button variant="primary" className="w-100 mt-auto">Chọn chuyến bay</Button>
+                <Button
+                  variant="primary"
+                  className="w-100 mt-auto"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    goDetail(f.id, true);
+                  }}
+                >
+                  Đặt vé ngay
+                </Button>
               </Card.Body>
             </Card>
           </Col>

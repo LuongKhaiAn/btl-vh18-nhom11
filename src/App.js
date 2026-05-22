@@ -1,39 +1,69 @@
-import { useState } from "react";
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/common/Navbar";
 import Footer from "./components/common/Footer";
+import PageTransition from "./components/common/PageTransition";
+import ScrollToTop from "./components/common/ScrollToTop";
 import HomePage from "./page/home-page/home-menu";
 import MyTicketsPage from "./page/my-tickets/MyTicketsPage";
-import HotelsPage from "./page/hotels/HotelsPage";
-import ToursPage from "./page/tours/ToursPage";
+import HotelList from "./page/hotels/HotelList";
+import TourList from "./page/tours/TourList";
 import CarsPage from "./page/cars/CarsPage";
-import FlightsPage from "./page/flights/FlightsPage";
+import FlightList from "./page/flights/FlightList";
+import ProductDetailPage from "./components/product/ProductDetailPage";
+import { ROUTES } from "./config/pages";
 
-const PAGE_COMPONENTS = {
-  home: HomePage,
-  hotels: HotelsPage,
-  tours: ToursPage,
-  cars: CarsPage,
-  flights: FlightsPage,
-  "my-tickets": MyTicketsPage,
-};
-
-function App() {
-  const [currentPage, setCurrentPage] = useState("home");
-  const PageContent = PAGE_COMPONENTS[currentPage] ?? HomePage;
+function AppContent() {
+  const location = useLocation();
 
   return (
     <div className="app-shell">
-      <Navbar currentPage={currentPage} onNavigate={setCurrentPage} />
+      <ScrollToTop />
+      <Navbar />
       <div className="app-body">
-        {currentPage === "home" ? (
-          <HomePage onNavigate={setCurrentPage} />
-        ) : (
-          <PageContent />
-        )}
+        <PageTransition pageKey={location.pathname}>
+          <Routes>
+            <Route path={ROUTES.home} element={<HomePage />} />
+            <Route path={ROUTES.hotels} element={<HotelList />} />
+            <Route
+              path={`${ROUTES.hotels}/:id`}
+              element={<ProductDetailPage productKey="hotels" />}
+            />
+            <Route path={ROUTES.tours} element={<TourList />} />
+            <Route
+              path={`${ROUTES.tours}/:id`}
+              element={<ProductDetailPage productKey="tours" />}
+            />
+            <Route path={ROUTES.cars} element={<CarsPage />} />
+            <Route
+              path={`${ROUTES.cars}/:id`}
+              element={<ProductDetailPage productKey="cars" />}
+            />
+            <Route path={ROUTES.flights} element={<FlightList />} />
+            <Route
+              path={`${ROUTES.flights}/:id`}
+              element={<ProductDetailPage productKey="flights" />}
+            />
+            <Route
+              path={ROUTES.myTickets}
+              element={<Navigate to={ROUTES.myTicketsPending} replace />}
+            />
+            <Route path={ROUTES.myTicketsPending} element={<MyTicketsPage />} />
+            <Route path={ROUTES.myTicketsPaid} element={<MyTicketsPage />} />
+            <Route path={ROUTES.myTicketsCancelled} element={<MyTicketsPage />} />
+          </Routes>
+        </PageTransition>
       </div>
       <Footer />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
+    </BrowserRouter>
   );
 }
 

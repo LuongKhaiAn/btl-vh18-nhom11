@@ -302,7 +302,7 @@
       "numberOfPeople": 2,
       "pricePerPerson": 2500000,
       "totalPrice": 7500000,
-      "status": "Chờ thanh toán",
+      "status": "Đã thanh toán",
       "createdAt": "2026-05-20T10:30:00Z"
     },
     {
@@ -332,6 +332,62 @@
       "totalPrice": 1350000,
       "status": "Đã hủy",
       "createdAt": "2026-05-10T14:00:00Z"
+    },
+    {
+      "userId": "user_001",
+      "itemId": "hotel_001",
+      "itemType": "Khách sạn",
+      "itemName": "Vinpearl Resort Nha Trang",
+      "checkIn": "2026-05-21",
+      "checkOut": "2026-05-30",
+      "numberOfPeople": 2,
+      "pricePerPerson": 2500000,
+      "totalPrice": 5000000,
+      "status": "Đã thanh toán",
+      "createdAt": "2026-05-22T15:53:11.441Z",
+      "id": "xBErT9FV3YY"
+    },
+    {
+      "userId": "user_001",
+      "itemId": "tour_001",
+      "itemType": "Du lịch",
+      "itemName": "Tour Sapa - Fansipan 3N2Đ",
+      "checkIn": "2026-05-23",
+      "checkOut": "2026-05-24",
+      "numberOfPeople": 2,
+      "pricePerPerson": 4500000,
+      "totalPrice": 9000000,
+      "status": "Đã hủy",
+      "createdAt": "2026-05-22T15:53:46.939Z",
+      "id": "f63bJZS3dIA"
+    },
+    {
+      "userId": "user_001",
+      "itemId": "hotel_001",
+      "itemType": "Khách sạn",
+      "itemName": "Vinpearl Resort Nha Trang",
+      "checkIn": "2026-05-15",
+      "checkOut": "2026-05-25",
+      "numberOfPeople": 2,
+      "pricePerPerson": 2500000,
+      "totalPrice": 5000000,
+      "status": "Chờ thanh toán",
+      "createdAt": "2026-05-22T15:55:52.375Z",
+      "id": "j--3yqTMboM"
+    },
+    {
+      "userId": "user_001",
+      "itemId": "hotel_001",
+      "itemType": "Khách sạn",
+      "itemName": "Vinpearl Resort Nha Trang",
+      "checkIn": "2026-05-24",
+      "checkOut": "2026-05-28",
+      "numberOfPeople": 1,
+      "pricePerPerson": 2500000,
+      "totalPrice": 2500000,
+      "status": "Đã thanh toán",
+      "createdAt": "2026-05-22T16:02:12.041Z",
+      "id": "rF0jRZFS-vs"
     }
   ],
   "users": [
@@ -435,14 +491,36 @@
     "copyright": "© 2026 TravelGo. All rights reserved."
   },
   "bookingStatusTypes": [
-    "Chờ thanh toán",
-    "Đã thanh toán",
-    "Đã hủy"
+    {
+      "id": "status_001",
+      "label": "Chờ thanh toán"
+    },
+    {
+      "id": "status_002",
+      "label": "Đã thanh toán"
+    },
+    {
+      "id": "status_003",
+      "label": "Đã hủy"
+    }
   ],
   "itemTypes": [
-    "Khách sạn",
-    "Du lịch",
-    "Xe tự lái",
-    "Máy bay"
-  ]
+    {
+      "id": "type_001",
+      "label": "Khách sạn"
+    },
+    {
+      "id": "type_002",
+      "label": "Du lịch"
+    },
+    {
+      "id": "type_003",
+      "label": "Xe tự lái"
+    },
+    {
+      "id": "type_004",
+      "label": "Máy bay"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

@@ -1,9 +1,12 @@
 import { Row, Col, Card, Button } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { getProductDetailPath } from "../../config/products";
 
 function TourList() {
+  const navigate = useNavigate();
   const [tours, setTours] = useState([]);
   const [search, setSearch] = useState("");
 
@@ -29,6 +32,12 @@ function TourList() {
     (t.name || "").toLowerCase().includes(search.toLowerCase()),
   );
 
+  const goDetail = (id, scrollToBook = false) => {
+    navigate(getProductDetailPath("tours", id), {
+      state: scrollToBook ? { scrollToBook: true } : undefined,
+    });
+  };
+
   return (
     <div className="text-center mt-3 container">
       <h1>All Tours</h1>
@@ -47,7 +56,13 @@ function TourList() {
       <Row>
         {chonTour.map((t) => (
           <Col md={4} key={t.id}>
-            <Card className="mb-3 p-2">
+            <Card
+              className="mb-3 p-2 product-card-clickable"
+              role="button"
+              tabIndex={0}
+              onClick={() => goDetail(t.id)}
+              onKeyDown={(e) => e.key === "Enter" && goDetail(t.id)}
+            >
               {t.image && (
                 <div style={{ height: "200px", overflow: "hidden" }}>
                   <Card.Img
@@ -76,7 +91,16 @@ function TourList() {
                   <b>Price From:</b> <span className="text-danger fw-bold">{formatPrice(t.priceFrom)}</span>
                 </p>
 
-                <Button variant="primary" className="w-100">Detail</Button>
+                <Button
+                  variant="primary"
+                  className="w-100"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    goDetail(t.id, true);
+                  }}
+                >
+                  Đặt tour ngay
+                </Button>
               </Card.Body>
             </Card>
           </Col>

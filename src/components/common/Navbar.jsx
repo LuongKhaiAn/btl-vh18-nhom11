@@ -1,49 +1,52 @@
 import React from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import { Plane, Ticket } from "lucide-react";
-import { NAV_ITEMS, getNavLabelByPage } from "../../config/pages";
+import {
+  NAV_ITEMS,
+  ROUTES,
+  isMyTicketsPath,
+  isProductPath,
+} from "../../config/pages";
 
-const LIGHT_HEADER_PAGES = ["hotels", "tours", "cars", "flights", "my-tickets"];
-
-const Navbar = ({ currentPage = "home", onNavigate }) => {
-  const activeNavItem = getNavLabelByPage(currentPage);
-  const isLightHeader = LIGHT_HEADER_PAGES.includes(currentPage);
+const Navbar = () => {
+  const { pathname } = useLocation();
+  const isLightHeader = isProductPath(pathname) || isMyTicketsPath(pathname);
 
   return (
-    <header className={`header-bar ${isLightHeader ? "header-bar--light" : ""}`}>
+    <header className={`header-bar${isLightHeader ? " header-bar--light" : ""}`}>
       <div className="header-inner">
-        <button
-          className="nav-logo"
-          type="button"
-          onClick={() => onNavigate?.("home")}
-        >
+        <NavLink className="nav-logo" to={ROUTES.home}>
           <span className="nav-logo-icon" aria-hidden="true">
             <Plane />
           </span>
           <span className="nav-logo-text">TravelGo</span>
-        </button>
+        </NavLink>
 
         <nav className="nav-menu">
-          {NAV_ITEMS.map(({ label, page }) => (
-            <button
-              key={page}
-              className={`nav-item ${activeNavItem === label ? "active" : ""}`}
-              type="button"
-              onClick={() => onNavigate?.(page)}
+          {NAV_ITEMS.map(({ label, path }) => (
+            <NavLink
+              key={path}
+              to={path}
+              end={path === ROUTES.home}
+              className={({ isActive }) =>
+                `nav-item${isActive ? " active" : ""}`
+              }
             >
               {label}
-            </button>
+            </NavLink>
           ))}
         </nav>
 
         <div className="nav-actions">
-          <button
-            className={`action-pill ${currentPage === "my-tickets" ? "action-pill--active" : ""}`}
-            type="button"
-            onClick={() => onNavigate?.("my-tickets")}
+          <NavLink
+            to={ROUTES.myTicketsPending}
+            className={() =>
+              `action-pill${isMyTicketsPath(pathname) ? " action-pill--active" : ""}`
+            }
           >
             <Ticket size={16} />
             Vé của tôi
-          </button>
+          </NavLink>
           <button className="action-button" type="button">
             Đăng nhập
           </button>
