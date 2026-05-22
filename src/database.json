@@ -1,0 +1,1014 @@
+{
+  "hotels": [
+    {
+      "id": "hotel_001",
+      "type": "Khách sạn",
+      "name": "Vinpearl Resort Nha Trang",
+      "location": "Nha Trang, Khánh Hòa",
+      "description": "Khu nghỉ dưỡng 5 sao bên bờ biển với hồ bơi vô cực và spa cao cấp.",
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+      "amenities": ["Hồ bơi vô cực", "Spa & Gym", "Nhà hàng 5 sao", "Wifi miễn phí"],
+      "pricing": [
+        { "group": "1-2 người", "minPeople": 1, "maxPeople": 2, "pricePerPerson": 2500000 },
+        { "group": "3-5 người", "minPeople": 3, "maxPeople": 5, "pricePerPerson": 2100000 },
+        { "group": "6-10 người", "minPeople": 6, "maxPeople": 10, "pricePerPerson": 1800000 }
+      ],
+      "priceFrom": 1800000
+    },
+    {
+      "id": "hotel_002",
+      "type": "Khách sạn",
+      "name": "Mường Thanh Luxury Đà Nẵng",
+      "location": "Đà Nẵng",
+      "description": "Khách sạn sang trọng tại trung tâm thành phố biển, view biển Mỹ Khê.",
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+      "amenities": ["Hồ bơi", "Spa", "Nhà hàng", "Wifi miễn phí"],
+      "pricing": [
+        { "group": "1-2 người", "minPeople": 1, "maxPeople": 2, "pricePerPerson": 1800000 },
+        { "group": "3-5 người", "minPeople": 3, "maxPeople": 5, "pricePerPerson": 1500000 },
+        { "group": "6-10 người", "minPeople": 6, "maxPeople": 10, "pricePerPerson": 1200000 }
+      ],
+      "priceFrom": 1200000
+    },
+    {
+      "id": "hotel_003",
+      "type": "Khách sạn",
+      "name": "InterContinental Hanoi Westlake",
+      "location": "Hà Nội",
+      "description": "Khách sạn lãng mạn xây dựng hoàn toàn trên mặt nước Hồ Tây thanh bình.",
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800",
+      "amenities": ["View Hồ Tây", "Bar nổi", "Bể bơi bốn mùa", "Wifi miễn phí"],
+      "pricing": [
+        { "group": "1-2 người", "minPeople": 1, "maxPeople": 2, "pricePerPerson": 3500000 },
+        { "group": "3-5 người", "minPeople": 3, "maxPeople": 5, "pricePerPerson": 3100000 }
+      ],
+      "priceFrom": 3100000
+    },
+    {
+      "id": "hotel_004",
+      "type": "Khách sạn",
+      "name": "The Reverie Saigon",
+      "location": "TP. Hồ Chí Minh",
+      "description": "Khách sạn sang trọng mang phong cách hoàng gia Ý quý phái ngay trung tâm Quận 1.",
+      "rating": 5.0,
+      "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800",
+      "amenities": ["Dịch vụ 6 sao", "Hồ bơi nhạc nước", "Phòng hoàng gia", "Gym & Spa"],
+      "pricing": [
+        { "group": "1-2 người", "minPeople": 1, "maxPeople": 2, "pricePerPerson": 5500000 }
+      ],
+      "priceFrom": 5500000
+    },
+    {
+      "id": "hotel_005",
+      "type": "Khách sạn",
+      "name": "Pullman Vũng Tàu",
+      "location": "Vũng Tàu",
+      "description": "Trung tâm hội nghị quốc tế và resort mang phong cách nhiệt đới hiện đại.",
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+      "amenities": ["Gần bãi sau", "Hồ bơi lớn", "Quầy Bar cao cấp", "Phòng Hội Nghị"],
+      "pricing": [
+        { "group": "1-2 người", "minPeople": 1, "maxPeople": 2, "pricePerPerson": 1900000 }
+      ],
+      "priceFrom": 1900000
+    },
+    {
+      "id": "hotel_006",
+      "type": "Khách sạn",
+      "name": "Sheraton Phú Quốc Long Beach",
+      "location": "Phú Quốc, Kiên Giang",
+      "description": "Kiến trúc tân cổ điển hoàng gia châu Âu sang trọng bên bờ biển dài Gành Dầu.",
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1561501900-3701fa6a0864?w=800",
+      "amenities": ["Bãi biển riêng", "Sân Golf liền kề", "Hồ bơi 1200m2", "Kids Club"],
+      "pricing": [
+        { "group": "1-2 người", "minPeople": 1, "maxPeople": 2, "pricePerPerson": 2800000 }
+      ],
+      "priceFrom": 2800000
+    },
+    {
+      "id": "hotel_007",
+      "type": "Khách sạn",
+      "name": "Hotel de la Coupole Sapa",
+      "location": "Sapa, Lào Cai",
+      "description": "Sự hòa quyện hoàn hảo giữa thời trang cao cấp Pháp và văn hóa sắc màu dân tộc Tây Bắc.",
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800",
+      "amenities": ["Bể bơi nước nóng", "Nhà hàng Pháp", "Trung tâm Sapa", "View núi non"],
+      "pricing": [
+        { "group": "1-2 người", "minPeople": 1, "maxPeople": 2, "pricePerPerson": 3100000 }
+      ],
+      "priceFrom": 3100000
+    },
+    {
+      "id": "hotel_008",
+      "type": "Khách sạn",
+      "name": "Novotel Ha Long Bay",
+      "location": "Hạ Long, Quảng Ninh",
+      "description": "Khách sạn nhìn thẳng ra vịnh biển thơ mộng, kế bên công viên Sun World sầm uất.",
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800",
+      "amenities": ["View trọn Vịnh", "Bể bơi ngoài trời", "Gần Sun World", "Nhà hàng hải sản"],
+      "pricing": [
+        { "group": "1-2 người", "minPeople": 1, "maxPeople": 2, "pricePerPerson": 1600000 }
+      ],
+      "priceFrom": 1600000
+    },
+    {
+      "id": "hotel_009",
+      "type": "Khách sạn",
+      "name": "Ana Mandara Villas Dalat Resort",
+      "location": "Đà Lạt, Lâm Đồng",
+      "description": "Quần thể biệt thự Pháp cổ nguyên bản ẩn mình giữa đồi thông xanh ngát mơ màng.",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1543968332-f99478b1ebdc?w=800",
+      "amenities": ["Lò sưởi ấm", "Hồ bơi nước ấm ngoài trời", "Spa organic", "Sân vườn rộng"],
+      "pricing": [
+        { "group": "1-2 người", "minPeople": 1, "maxPeople": 2, "pricePerPerson": 2200000 }
+      ],
+      "priceFrom": 2200000
+    },
+    {
+      "id": "hotel_010",
+      "type": "Khách sạn",
+      "name": "Silk Sense Hoi An River Resort",
+      "location": "Hội An, Quảng Nam",
+      "description": "Khu nghỉ dưỡng xanh yên bình bên dòng sông Cổ Cò, thân thiện với môi trường tự nhiên.",
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800",
+      "amenities": ["Hồ bơi muối khoáng", "Trà chiều miễn phí", "Xe đạp dạo phố", "Vườn hữu cơ"],
+      "pricing": [
+        { "group": "1-2 người", "minPeople": 1, "maxPeople": 2, "pricePerPerson": 1750000 }
+      ],
+      "priceFrom": 1750000
+    },
+    {
+      "id": "hotel_011",
+      "type": "Khách sạn",
+      "name": "Imperial Hotel Vũng Tàu",
+      "location": "Vũng Tàu",
+      "description": "Khách sạn 5 sao duy nhất mang kiến trúc phong cách phương Tây cổ điển nguy nga tại Bãi Sau.",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800",
+      "amenities": ["Beach Club riêng", "Nội thất hoàng gia", "Hồ bơi phong cách La Mã", "Nhà hàng Trung Hoa"],
+      "pricing": [
+        { "group": "1-2 người", "minPeople": 1, "maxPeople": 2, "pricePerPerson": 2400000 }
+      ],
+      "priceFrom": 2400000
+    },
+    {
+      "id": "hotel_012",
+      "type": "Khách sạn",
+      "name": "Lotte Hotel Hanoi",
+      "location": "Hà Nội",
+      "description": "Tọa lạc tại các tầng cao nhất của tòa tháp Lotte, view ôm trọn toàn cảnh thủ đô rực rỡ.",
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800",
+      "amenities": ["Sky Bar tầng 65", "Bể bơi trong nhà", "Evian Spa siêu sang", "Khu mua sắm"],
+      "pricing": [
+        { "group": "1-2 người", "minPeople": 1, "maxPeople": 2, "pricePerPerson": 3300000 }
+      ],
+      "priceFrom": 3300000
+    },
+    {
+      "id": "hotel_013",
+      "type": "Khách sạn",
+      "name": "Nikko Hotel Saigon",
+      "location": "TP. Hồ Chí Minh",
+      "description": "Khách sạn mang tinh thần Nhật Bản tinh tế, nổi tiếng bậc nhất với đại tiệc buffet hải sản.",
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800",
+      "amenities": ["Buffet tôm hùm ngon", "Phòng kiểu Nhật", "Spa thư giãn", "Hồ bơi ngoài trời"],
+      "pricing": [
+        { "group": "1-2 người", "minPeople": 1, "maxPeople": 2, "pricePerPerson": 2600000 }
+      ],
+      "priceFrom": 2600000
+    },
+    {
+      "id": "hotel_014",
+      "type": "Khách sạn",
+      "name": "Flamingo Đại Lải Resort",
+      "location": "Vĩnh Phúc (Gần Hà Nội)",
+      "description": "Vương quốc của hoa hồng và nghệ thuật kiến trúc xanh, biệt thự hồ nước trong lành.",
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1606046604972-77cc76aee944?w=800",
+      "amenities": ["Tắm khoáng Onsen", "Công viên thực tế ảo", "Chèo thuyền kayak", "Sân Golf"],
+      "pricing": [
+        { "group": "1-4 người", "minPeople": 1, "maxPeople": 4, "pricePerPerson": 2000000 }
+      ],
+      "priceFrom": 2000000
+    },
+    {
+      "id": "hotel_015",
+      "type": "Khách sạn",
+      "name": "Vinpearl Resort & Spa Đà Nẵng",
+      "location": "Đà Nẵng",
+      "description": "Bộ sưu tập biệt thự 100% có hồ bơi riêng biệt lập trải dài dọc bờ biển Non Nước.",
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
+      "amenities": ["Biệt thự hồ bơi riêng", "Spa trên mặt hồ", "Sát bãi biển", "Ẩm thực địa phương"],
+      "pricing": [
+        { "group": "2-4 người", "minPeople": 2, "maxPeople": 4, "pricePerPerson": 4100000 }
+      ],
+      "priceFrom": 4100000
+    },
+    {
+      "id": "hotel_016",
+      "type": "Khách sạn",
+      "name": "Regent Phu Quoc",
+      "location": "Phú Quốc, Kiên Giang",
+      "description": "Khu nghỉ dưỡng siêu sang mang dấu ấn cá nhân hóa đẳng cấp thượng lưu độc nhất vô nhị.",
+      "rating": 5.0,
+      "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800",
+      "amenities": ["Quầy bar ngắm hoàng hôn", "Hồ bơi vô cực tầng mái", "Quản gia riêng", "Bộ tiện ích cao cấp"],
+      "pricing": [
+        { "group": "1-2 người", "minPeople": 1, "maxPeople": 2, "pricePerPerson": 9500000 }
+      ],
+      "priceFrom": 9500000
+    }
+  ],
+  "tours": [
+    {
+      "id": "tour_001",
+      "type": "Du lịch",
+      "name": "Tour Sapa - Fansipan 3N2Đ",
+      "location": "Sapa, Lào Cai",
+      "description": "Khám phá vẻ đẹp hùng vĩ của núi rừng Tây Bắc và chinh phục nóc nhà Đông Dương.",
+      "rating": 4.9,
+      "duration": "3 ngày 2 đêm",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+      "includes": ["Hướng dẫn viên", "Bao gồm bữa ăn", "Vé cáp treo", "Homestay"],
+      "pricing": [
+        { "group": "1-2 người", "minPeople": 1, "maxPeople": 2, "pricePerPerson": 4500000 },
+        { "group": "3-5 người", "minPeople": 3, "maxPeople": 5, "pricePerPerson": 3800000 },
+        { "group": "6-15 người", "minPeople": 6, "maxPeople": 15, "pricePerPerson": 3200000 }
+      ],
+      "priceFrom": 3200000
+    },
+    {
+      "id": "tour_002",
+      "type": "Du lịch",
+      "name": "Tour Hội An - Đà Nẵng 4N3Đ",
+      "location": "Hội An, Quảng Nam",
+      "description": "Khám phá vẻ đẹp hoài cổ của phố cổ Hội An và bãi biển Mỹ Khê tuyệt đẹp.",
+      "rating": 4.7,
+      "duration": "4 ngày 3 đêm",
+      "image": "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=800",
+      "includes": ["Hướng dẫn viên", "Bao gồm bữa ăn", "Vé tham quan", "Khách sạn 4 sao"],
+      "pricing": [
+        { "group": "1-2 người", "minPeople": 1, "maxPeople": 2, "pricePerPerson": 5500000 },
+        { "group": "3-5 người", "minPeople": 3, "maxPeople": 5, "pricePerPerson": 4800000 }
+      ],
+      "priceFrom": 4200000
+    },
+    {
+      "id": "tour_003",
+      "type": "Du lịch",
+      "name": "Tour Đảo Ngọc Phú Quốc 3N2Đ",
+      "location": "Phú Quốc, Kiên Giang",
+      "description": "Trải nghiệm cano 4 đảo, lặn ngắm san hô tự nhiên và check-in Sunset Sanato rực rỡ.",
+      "rating": 4.8,
+      "duration": "3 ngày 2 đêm",
+      "image": "https://images.unsplash.com/photo-1540206351-d6465b3ac5c1?w=800",
+      "includes": ["Vé máy bay khứ hồi", "Cano tham quan đảo", "Resort sát biển", "Buffet hải sản"],
+      "pricing": [
+        { "group": "1-2 người", "minPeople": 1, "maxPeople": 2, "pricePerPerson": 5200000 },
+        { "group": "3-5 người", "minPeople": 3, "maxPeople": 5, "pricePerPerson": 4600000 }
+      ],
+      "priceFrom": 4600000
+    },
+    {
+      "id": "tour_004",
+      "type": "Du lịch",
+      "name": "Tour Di Sản Vịnh Hạ Long 2N1Đ",
+      "location": "Hạ Long, Quảng Ninh",
+      "description": "Nghỉ dưỡng và du ngoạn trên du thuyền 5 sao đẳng cấp qua các hang động kỳ vĩ.",
+      "rating": 4.6,
+      "duration": "2 ngày 1 đêm",
+      "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800",
+      "includes": ["Du thuyền 5 sao", "Chèo thuyền Kayak", "Lớp học nấu ăn", "Phòng ban công riêng"],
+      "pricing": [{ "group": "1-2 người", "pricePerPerson": 2900000 }],
+      "priceFrom": 2900000
+    },
+    {
+      "id": "tour_005",
+      "type": "Du lịch",
+      "name": "Tour Đà Lạt Thành Phố Ngàn Hoa 3N2Đ",
+      "location": "Đà Lạt, Lâm Đồng",
+      "description": "Check-in Thác Datanla, Quảng trường Lâm Viên và thung lũng tình yêu mộng mơ.",
+      "rating": 4.5,
+      "duration": "3 ngày 2 đêm",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800",
+      "includes": ["Xe đưa đón đời mới", "Vé tham quan các điểm", "Khách sạn trung tâm", "Bữa ăn đặc sản"],
+      "pricing": [{ "group": "1-5 người", "pricePerPerson": 2450000 }],
+      "priceFrom": 2450000
+    },
+    {
+      "id": "tour_006",
+      "type": "Du lịch",
+      "name": "Tour Tràng An - Bái Đính Ninh Bình 1 Ngày",
+      "location": "Ninh Bình",
+      "description": "Xuôi thuyền ngắm danh thắng Tràng An lung linh, viếng thăm ngôi chùa Bái Đính kỷ lục.",
+      "rating": 4.7,
+      "duration": "1 ngày",
+      "image": "https://images.unsplash.com/photo-1527004013197-933c4bb611b3?w=800",
+      "includes": ["Xe limousine khứ hồi", "Vé đò Tràng An", "Vé xe điện", "Ăn trưa buffet dê núi"],
+      "pricing": [{ "group": "1-10 người", "pricePerPerson": 950000 }],
+      "priceFrom": 950000
+    },
+    {
+      "id": "tour_007",
+      "type": "Du lịch",
+      "name": "Tour Khám Phá Cố Đô Huế Kinh Dị 2N1Đ",
+      "location": "Huế, Thừa Thiên Huế",
+      "description": "Tham quan Đại Nội cổ kính, các lăng tẩm oai nghiêm và thưởng ngoạn ca trù trên Sông Hương.",
+      "rating": 4.6,
+      "duration": "2 ngày 1 đêm",
+      "image": "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800",
+      "includes": ["Hướng dẫn viên suốt tuyến", "Vé vào cổng di tích", "Khách sạn 3 sao", "Nghe ca Huế trên sông"],
+      "pricing": [{ "group": "1-4 người", "pricePerPerson": 1850000 }],
+      "priceFrom": 1850000
+    },
+    {
+      "id": "tour_008",
+      "type": "Du lịch",
+      "name": "Tour Hành Trình Đảo Điệp Sơn - Nha Trang",
+      "location": "Nha Trang, Khánh Hòa",
+      "description": "Khám phá con đường đi bộ giữa đại dương độc nhất vô nhị đầy lôi cuốn tại Việt Nam.",
+      "rating": 4.4,
+      "duration": "1 ngày",
+      "image": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800",
+      "includes": ["Tàu cao tốc ra đảo", "Ăn trưa hải sản trên bè", "Kính lặn ngắm cá", "Bảo hiểm du lịch"],
+      "pricing": [{ "group": "1-5 người", "pricePerPerson": 800000 }],
+      "priceFrom": 800000
+    },
+    {
+      "id": "tour_009",
+      "type": "Du lịch",
+      "name": "Tour Cao Nguyên Đá Đồng Văn Hà Giang 3N2Đ",
+      "location": "Hà Giang",
+      "description": "Chinh phục đèo Mã Pí Lèng kỳ vĩ, check-in Cột cờ Lũng Cú và sông Nho Quế xanh ngọc.",
+      "rating": 4.9,
+      "duration": "3 ngày 2 đêm",
+      "image": "https://images.unsplash.com/photo-1605538294054-51a42c99db21?w=800",
+      "includes": ["Xe khách giường nằm", "Thuyền sông Nho Quế", "Homestay bản sắc", "Ăn các bữa bản địa"],
+      "pricing": [{ "group": "1-2 người", "pricePerPerson": 3390000 }],
+      "priceFrom": 3390000
+    },
+    {
+      "id": "tour_010",
+      "type": "Du lịch",
+      "name": "Tour Miền Tây Sông Nước Cần Thơ - Mỹ Tho",
+      "location": "Cần Thơ",
+      "description": "Ghé thăm chợ nổi Cái Răng tấp nập buổi sớm, len lỏi rạch dừa và hái trái cây tại vườn.",
+      "rating": 4.5,
+      "duration": "2 ngày 1 đêm",
+      "image": "https://images.unsplash.com/photo-1545231027-63b6f0a3e26f?w=800",
+      "includes": ["Ghe máy xuồng chèo", "Trái cây miệt vườn", "Đờn ca tài tử", "Khách sạn 4 sao bến Ninh Kiều"],
+      "pricing": [{ "group": "1-6 người", "pricePerPerson": 1600000 }],
+      "priceFrom": 1600000
+    },
+    {
+      "id": "tour_011",
+      "type": "Du lịch",
+      "name": "Tour Đảo Lý Sơn Thiên Đường Biển Hải",
+      "location": "Lý Sơn, Quảng Ngãi",
+      "description": "Chiêm ngưỡng vết tích núi lửa triệu năm tại Hang Câu, Đỉnh Thới Lới, Cổng Tò Vò kỳ vĩ.",
+      "rating": 4.7,
+      "duration": "3 ngày 2 đêm",
+      "image": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=800",
+      "includes": ["Vé tàu cao tốc khứ hồi", "Xe máy di chuyển trên đảo", "Khách sạn tiện nghi", "Suất ăn chính"],
+      "pricing": [{ "group": "1-4 người", "pricePerPerson": 2950000 }],
+      "priceFrom": 2950000
+    },
+    {
+      "id": "tour_012",
+      "type": "Du lịch",
+      "name": "Tour Phong Nha Kẻ Bàng - Động Thiên Đường",
+      "location": "Quảng Bình",
+      "description": "Khám phá hoàng cung trong lòng đất với những khối thạch nhũ tráng lệ bậc nhất thế giới.",
+      "rating": 4.8,
+      "duration": "1 ngày",
+      "image": "https://images.unsplash.com/photo-1532408840957-031d8034aeef?w=800",
+      "includes": ["Xe đón tiễn Đồng Hới", "Vé thuyền Phong Nha", "Vé xe điện Thiên Đường", "Ăn trưa đặc sản mế"],
+      "pricing": [{ "group": "1-10 người", "pricePerPerson": 1100000 }],
+      "priceFrom": 1100000
+    },
+    {
+      "id": "tour_013",
+      "type": "Du lịch",
+      "name": "Tour Mũi Né Cát Trắng Phan Thiết",
+      "location": "Phan Thiết, Bình Thuận",
+      "description": "Trải nghiệm chạy xe địa hình trên đồi cát bay, check-in Suối Tiên hoang sơ kỳ thú.",
+      "rating": 4.3,
+      "duration": "2 ngày 1 đêm",
+      "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800",
+      "includes": ["Xe khách khứ hồi từ HCM", "Xe Jeep dạo đồi cát", "Resort 3 sao có hồ bơi", "Ăn trưa chiều"],
+      "pricing": [{ "group": "1-2 người", "pricePerPerson": 1550000 }],
+      "priceFrom": 1550000
+    },
+    {
+      "id": "tour_014",
+      "type": "Du lịch",
+      "name": "Tour Khám Phá Quy Nhơn Eo Gió - Kỳ Co",
+      "location": "Quy Nhơn, Bình Định",
+      "description": "Check-in con đường ven biển Eo Gió tuyệt đẹp và tắm biển lặn san hô tại bãi Kỳ Co.",
+      "rating": 4.8,
+      "duration": "3 ngày 2 đêm",
+      "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800",
+      "includes": ["Cano khứ hồi đảo Kỳ Co", "Vé tham quan Eo Gió", "Khách sạn trung tâm", "Bữa tiệc hải sản tươi ngon"],
+      "pricing": [{ "group": "1-4 người", "pricePerPerson": 3100000 }],
+      "priceFrom": 3100000
+    },
+    {
+      "id": "tour_015",
+      "type": "Du lịch",
+      "name": "Tour Tà Đùng - Hạ Long Của Tây Nguyên",
+      "location": "Đắk Nông",
+      "description": "Ngắm nhìn tuyệt tác thiên nhiên hồ Tà Đùng với hàng trăm hòn đảo nhỏ xanh rì nổi trên mặt nước.",
+      "rating": 4.5,
+      "duration": "2 ngày 1 đêm",
+      "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800",
+      "includes": ["Xe giường nằm êm ái", "Thuyền tham quan lòng hồ", "Check-in tổ chim", "Resort view hồ"],
+      "pricing": [{ "group": "1-2 người", "pricePerPerson": 1980000 }],
+      "priceFrom": 1980000
+    },
+    {
+      "id": "tour_016",
+      "type": "Du lịch",
+      "name": "Tour Thác Bản Giốc - Cao Bằng 3N2Đ",
+      "location": "Cao Bằng",
+      "description": "Chiêm ngưỡng vẻ đẹp ngoạn mục của thác nước xuyên biên giới lớn nhất Đông Nam Á.",
+      "rating": 4.9,
+      "duration": "3 ngày 2 đêm",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800",
+      "includes": ["Xe vận chuyển khứ hồi", "Bè mảng tiến sát chân thác", "Vé tham quan Pác Bó", "Khách sạn tiện nghi"],
+      "pricing": [{ "group": "1-4 người", "pricePerPerson": 3250000 }],
+      "priceFrom": 3250000
+    }
+  ],
+  "cars": [
+    {
+      "id": "car_001",
+      "type": "Xe tự lái",
+      "name": "Toyota Fortuner 2024",
+      "location": "TP. Hồ Chí Minh",
+      "description": "SUV 7 chỗ rộng rãi, phù hợp cho gia đình và nhóm bạn.",
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800",
+      "specs": { "seats": 7, "fuel": "Xăng", "transmission": "Tự động", "year": 2024 },
+      "pricing": [
+        { "group": "1-2 ngày", "minDays": 1, "maxDays": 2, "pricePerDay": 900000 },
+        { "group": "3-6 ngày", "minDays": 3, "maxDays": 6, "pricePerDay": 800000 },
+        { "group": "7+ ngày", "minDays": 7, "maxDays": null, "pricePerDay": 750000 }
+      ],
+      "priceFrom": 750000
+    },
+    {
+      "id": "car_002",
+      "type": "Xe tự lái",
+      "name": "Honda City 2024",
+      "location": "Hà Nội",
+      "description": "Sedan tiết kiệm nhiên liệu, lý tưởng cho cặp đôi và gia đình nhỏ.",
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800",
+      "specs": { "seats": 5, "fuel": "Xăng", "transmission": "Tự động", "year": 2024 },
+      "pricing": [
+        { "group": "1-2 ngày", "minDays": 1, "maxDays": 2, "pricePerDay": 750000 },
+        { "group": "3-6 ngày", "minDays": 3, "maxDays": 6, "pricePerDay": 700000 },
+        { "group": "7+ ngày", "minDays": 7, "maxDays": null, "pricePerDay": 650000 }
+      ],
+      "priceFrom": 650000
+    },
+    {
+      "id": "car_003",
+      "type": "Xe tự lái",
+      "name": "Hyundai SantaFe 2024",
+      "location": "Hà Nội",
+      "description": "Dòng SUV 7 chỗ Premium sang trọng, nội thất bọc da và công nghệ hiện đại.",
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800",
+      "specs": { "seats": 7, "fuel": "Dầu", "transmission": "Tự động", "year": 2024 },
+      "pricing": [{ "group": "1-2 ngày", "minDays": 1, "maxDays": 2, "pricePerDay": 1400000 }],
+      "priceFrom": 1200000
+    },
+    {
+      "id": "car_004",
+      "type": "Xe tự lái",
+      "name": "VinFast VF8 2024",
+      "location": "TP. Hồ Chí Minh",
+      "description": "Xe SUV điện thông minh, vận hành mạnh mẽ mượt mà, đầy ắp công nghệ.",
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1563720223185-11003d516935?w=800",
+      "specs": { "seats": 5, "fuel": "Điện", "transmission": "Tự động", "year": 2024 },
+      "pricing": [{ "group": "1-2 ngày", "minDays": 1, "maxDays": 2, "pricePerDay": 1100000 }],
+      "priceFrom": 1000000
+    },
+    {
+      "id": "car_005",
+      "type": "Xe tự lái",
+      "name": "Kia Morning 2023",
+      "location": "Hà Nội",
+      "description": "Xe đô thị cỡ nhỏ siêu tiết kiệm, cực kỳ dễ luồn lách phố xá đông đúc.",
+      "rating": 4.2,
+      "image": "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=800",
+      "specs": { "seats": 4, "fuel": "Xăng", "transmission": "Tự động", "year": 2023 },
+      "pricing": [{ "group": "1-2 ngày", "pricePerDay": 500000 }],
+      "priceFrom": 450000
+    },
+    {
+      "id": "car_006",
+      "type": "Xe tự lái",
+      "name": "Mazda 3 Hatchback 2024",
+      "location": "TP. Hồ Chí Minh",
+      "description": "Thiết kế thể thao Kodo quyến rũ thời thượng, hệ thống âm thanh nghe cực bốc.",
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800",
+      "specs": { "seats": 5, "fuel": "Xăng", "transmission": "Tự động", "year": 2024 },
+      "pricing": [{ "group": "1-2 ngày", "pricePerDay": 850000 }],
+      "priceFrom": 800000
+    },
+    {
+      "id": "car_007",
+      "type": "Xe tự lái",
+      "name": "Mitsubishi Xpander 2024",
+      "location": "Hà Nội",
+      "description": "Vua phân khúc xe 7 chỗ đa dụng, điều hòa mát rượi, chở đồ đạc thoải mái hành trình.",
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800",
+      "specs": { "seats": 7, "fuel": "Xăng", "transmission": "Tự động", "year": 2024 },
+      "pricing": [{ "group": "1-2 ngày", "pricePerDay": 800000 }],
+      "priceFrom": 750000
+    },
+    {
+      "id": "car_008",
+      "type": "Xe tự lái",
+      "name": "Ford Ranger Wildtrak 2024",
+      "location": "TP. Hồ Chí Minh",
+      "description": "Vua bán tải hầm hố mạnh mẽ, chinh phục mọi địa hình đồi dốc phượt hoàn hảo.",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1532581291347-9c39cf10a73c?w=800",
+      "specs": { "seats": 5, "fuel": "Dầu", "transmission": "Tự động", "year": 2024 },
+      "pricing": [{ "group": "1-2 ngày", "pricePerDay": 1100000 }],
+      "priceFrom": 1050000
+    },
+    {
+      "id": "car_009",
+      "type": "Xe tự lái",
+      "name": "VinFast VF5 Plus 2024",
+      "location": "Hà Nội",
+      "description": "Dòng SUV hạng A chạy điện thời thượng, chi phí di chuyển siêu rẻ, mượt mà bốc.",
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800",
+      "specs": { "seats": 5, "fuel": "Điện", "transmission": "Tự động", "year": 2024 },
+      "pricing": [{ "group": "1-2 ngày", "pricePerDay": 600000 }],
+      "priceFrom": 550000
+    },
+    {
+      "id": "car_010",
+      "type": "Xe tự lái",
+      "name": "Toyota Vios 2023",
+      "location": "TP. Hồ Chí Minh",
+      "description": "Dòng xe quốc dân bền bỉ, lành tính, vận hành ổn định trên mọi hành trình dài.",
+      "rating": 4.3,
+      "image": "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800",
+      "specs": { "seats": 5, "fuel": "Xăng", "transmission": "Tự động", "year": 2023 },
+      "pricing": [{ "group": "1-2 ngày", "pricePerDay": 650000 }],
+      "priceFrom": 600000
+    },
+    {
+      "id": "car_011",
+      "type": "Xe tự lái",
+      "name": "Hyundai Accent 2024",
+      "location": "Hà Nội",
+      "description": "Kiểu dáng thanh lịch trẻ trung, trang bị option phong phú, bản full cruise control.",
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800",
+      "specs": { "seats": 5, "fuel": "Xăng", "transmission": "Tự động", "year": 2024 },
+      "pricing": [{ "group": "1-2 ngày", "pricePerDay": 700000 }],
+      "priceFrom": 650000
+    },
+    {
+      "id": "car_012",
+      "type": "Xe tự lái",
+      "name": "Mercedes C200 Avantgarde",
+      "location": "TP. Hồ Chí Minh",
+      "description": "Dòng xe sedan hạng sang đẳng cấp, phù hợp đi sự kiện cưới hỏi hoặc gặp đối tác.",
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800",
+      "specs": { "seats": 5, "fuel": "Xăng", "transmission": "Tự động", "year": 2023 },
+      "pricing": [{ "group": "1-2 ngày", "pricePerDay": 2500000 }],
+      "priceFrom": 2200000
+    },
+    {
+      "id": "car_013",
+      "type": "Xe tự lái",
+      "name": "VinFast VF9 6 Chỗ",
+      "location": "Hà Nội",
+      "description": "E-SUV kích thước full-size khổng lồ, ghế cơ trưởng massage, rộng rãi tối đa.",
+      "rating": 5.0,
+      "image": "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=800",
+      "specs": { "seats": 6, "fuel": "Điện", "transmission": "Tự động", "year": 2024 },
+      "pricing": [{ "group": "1-2 ngày", "pricePerDay": 2200000 }],
+      "priceFrom": 2000000
+    },
+    {
+      "id": "car_014",
+      "type": "Xe tự lái",
+      "name": "Peugeot 3008 GT 2023",
+      "location": "TP. Hồ Chí Minh",
+      "description": "Xe SUV đến từ thương hiệu Pháp, khoang lái phi thuyền i-Cockpit độc lạ cá tính.",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=800",
+      "specs": { "seats": 5, "fuel": "Xăng", "transmission": "Tự động", "year": 2023 },
+      "pricing": [{ "group": "1-2 ngày", "pricePerDay": 1300000 }],
+      "priceFrom": 1200000
+    },
+    {
+      "id": "car_015",
+      "type": "Xe tự lái",
+      "name": "Honda CR-V 2024 Turbo",
+      "location": "Hà Nội",
+      "description": "Mẫu SUV 5+2 gia đình đầm chắc, trang bị gói an toàn Honda Sensing đỉnh cao cực an tâm.",
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=800",
+      "specs": { "seats": 7, "fuel": "Xăng", "transmission": "Tự động", "year": 2024 },
+      "pricing": [{ "group": "1-2 ngày", "pricePerDay": 1200000 }],
+      "priceFrom": 1100000
+    },
+    {
+      "id": "car_016",
+      "type": "Xe tự lái",
+      "name": "Kia Carnival Signature",
+      "location": "TP. Hồ Chí Minh",
+      "description": "Chuyên cơ mặt đất hoàng tráng, cực kỳ rộng cho đại gia đình 7 người đi du lịch xa xỉ.",
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=800",
+      "specs": { "seats": 7, "fuel": "Dầu", "transmission": "Tự động", "year": 2024 },
+      "pricing": [{ "group": "1-2 ngày", "pricePerDay": 1800000 }],
+      "priceFrom": 1700000
+    }
+  ],
+  "flights": [
+    {
+      "id": "flight_001",
+      "type": "Máy bay",
+      "airline": "Vietnam Airlines",
+      "from": "HCM",
+      "fromFull": "TP. Hồ Chí Minh",
+      "to": "Hà Nội",
+      "toFull": "Hà Nội",
+      "name": "HCM → Hà Nội",
+      "description": "Chuyến bay thẳng từ TP.HCM đến Hà Nội, nhiều khung giờ trong ngày.",
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800",
+      "duration": "2 giờ 10 phút",
+      "schedules": ["06:00", "08:30", "11:00", "14:00", "17:00", "20:00"],
+      "pricing": [
+        { "class": "Phổ thông", "price": 1350000 },
+        { "class": "Thương gia", "price": 3500000 }
+      ],
+      "priceFrom": 1350000
+    },
+    {
+      "id": "flight_002",
+      "type": "Máy bay",
+      "airline": "Bamboo Airways",
+      "from": "HAN",
+      "fromFull": "Hà Nội",
+      "to": "DAD",
+      "toFull": "Đà Nẵng",
+      "name": "Hà Nội → Đà Nẵng",
+      "description": "Bay thẳng đến thành phố đáng sống, trải nghiệm miền Trung.",
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?w=800",
+      "duration": "1 giờ 20 phút",
+      "schedules": ["07:00", "10:30", "13:00", "16:30", "19:00"],
+      "pricing": [
+        { "class": "Phổ thông", "price": 900000 },
+        { "class": "Thương gia", "price": 2800000 }
+      ],
+      "priceFrom": 900000
+    },
+    {
+      "id": "flight_003",
+      "type": "Máy bay",
+      "airline": "VietJet Air",
+      "from": "HAN",
+      "fromFull": "Hà Nội",
+      "to": "PQC",
+      "toFull": "Phú Quốc",
+      "name": "Hà Nội → Phú Quốc",
+      "description": "Chuyến bay du lịch tới Đảo Ngọc xanh mát, giá vé siêu tốt.",
+      "rating": 4.1,
+      "image": "https://images.unsplash.com/photo-1483450388369-9ed95738483c?w=800",
+      "duration": "2 giờ 05 phút",
+      "schedules": ["06:15", "11:45", "15:20", "19:50"],
+      "pricing": [{ "class": "Phổ thông", "price": 690000 }],
+      "priceFrom": 690000
+    },
+    {
+      "id": "flight_004",
+      "type": "Máy bay",
+      "airline": "Vietnam Airlines",
+      "from": "HAN",
+      "fromFull": "Hà Nội",
+      "to": "CXR",
+      "toFull": "Nha Trang",
+      "name": "Hà Nội → Nha Trang",
+      "description": "Hành trình đưa bạn đến vùng vịnh ngập tràn ánh nắng ấm áp.",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1517999144091-3d9dca6d1e43?w=800",
+      "duration": "1 giờ 55 phút",
+      "schedules": ["07:10", "13:40", "18:25"],
+      "pricing": [{ "class": "Phổ thông", "price": 1450000 }],
+      "priceFrom": 1450000
+    },
+    {
+      "id": "flight_005",
+      "type": "Máy bay",
+      "airline": "Pacific Airlines",
+      "from": "HCM",
+      "fromFull": "TP. Hồ Chí Minh",
+      "to": "BMV",
+      "toFull": "Buôn Ma Thuột",
+      "name": "HCM → Buôn Ma Thuột",
+      "description": "Chuyến bay nội địa giá rẻ đến thủ phủ cà phê Tây Nguyên lộng gió.",
+      "rating": 4.0,
+      "image": "https://images.unsplash.com/photo-1556388158-158ea5ccacbd?w=800",
+      "duration": "1 giờ 00 phút",
+      "schedules": ["06:30", "15:10"],
+      "pricing": [{ "class": "Phổ thông", "price": 580000 }],
+      "priceFrom": 580000
+    },
+    {
+      "id": "flight_006",
+      "type": "Máy bay",
+      "airline": "Vietravel Airlines",
+      "from": "HCM",
+      "fromFull": "TP. Hồ Chí Minh",
+      "to": "HUI",
+      "toFull": "Huế",
+      "name": "HCM → Huế",
+      "description": "Hành trình khám phá cố đô kinh cung trọn gói, giờ bay thích hợp.",
+      "rating": 4.3,
+      "image": "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=800",
+      "duration": "1 giờ 30 phút",
+      "schedules": ["08:00", "16:45"],
+      "pricing": [{ "class": "Phổ thông", "price": 750000 }],
+      "priceFrom": 750000
+    },
+    {
+      "id": "flight_007",
+      "type": "Máy bay",
+      "airline": "Vietnam Airlines",
+      "from": "HCM",
+      "fromFull": "TP. Hồ Chí Minh",
+      "to": "DLI",
+      "toFull": "Đà Lạt",
+      "name": "HCM → Đà Lạt",
+      "description": "Chuyến bay siêu nhanh trốn nóng sài gòn lên với phố sương mù.",
+      "rating": 4.6,
+      "duration": "50 phút",
+      "image": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=800",
+      "schedules": ["07:30", "11:20", "16:00", "21:10"],
+      "pricing": [{ "class": "Phổ thông", "price": 890000 }],
+      "priceFrom": 890000
+    },
+    {
+      "id": "flight_008",
+      "type": "Máy bay",
+      "airline": "Bamboo Airways",
+      "from": "HAN",
+      "fromFull": "Hà Nội",
+      "to": "VCS",
+      "toFull": "Côn Đảo",
+      "name": "Hà Nội → Côn Đảo",
+      "description": "Đường bay thẳng bằng phản lực hiện đại tới vùng đảo linh thiêng.",
+      "rating": 4.8,
+      "duration": "2 giờ 20 phút",
+      "image": "https://images.unsplash.com/photo-1473862170180-84427c485aca?w=800",
+      "schedules": ["06:45", "13:15"],
+      "pricing": [{ "class": "Phổ thông", "price": 2600000 }],
+      "priceFrom": 2600000
+    },
+    {
+      "id": "flight_009",
+      "type": "Máy bay",
+      "airline": "VietJet Air",
+      "from": "HCM",
+      "fromFull": "TP. Hồ Chí Minh",
+      "to": "HPH",
+      "toFull": "Hải Phòng",
+      "name": "HCM → Hải Phòng",
+      "description": "Kết nối thành phố cảng hoa phượng đỏ rực rỡ với đầu cầu kinh tế phía nam.",
+      "rating": 4.0,
+      "duration": "2 giờ 00 phút",
+      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800",
+      "schedules": ["05:30", "10:15", "17:40", "22:00"],
+      "pricing": [{ "class": "Phổ thông", "price": 790000 }],
+      "priceFrom": 790000
+    },
+    {
+      "id": "flight_010",
+      "type": "Máy bay",
+      "airline": "Vietnam Airlines",
+      "from": "VCA",
+      "fromFull": "Cần Thơ",
+      "to": "HAN",
+      "toFull": "Hà Nội",
+      "name": "Cần Thơ → Hà Nội",
+      "description": "Đường bay huyết mạch gắn kết thủ đô yêu dấu với miền tây sông nước.",
+      "rating": 4.7,
+      "duration": "2 giờ 15 phút",
+      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800",
+      "schedules": ["09:15", "19:30"],
+      "pricing": [{ "class": "Phổ thông", "price": 1650000 }],
+      "priceFrom": 1650000
+    },
+    {
+      "id": "flight_011",
+      "type": "Máy bay",
+      "airline": "Bamboo Airways",
+      "from": "HCM",
+      "fromFull": "TP. Hồ Chí Minh",
+      "to": "VDH",
+      "toFull": "Quảng Bình",
+      "name": "HCM → Quảng Bình",
+      "description": "Bay thẳng đến vương quốc hang động thế giới, tiết kiệm thời gian di chuyển.",
+      "rating": 4.5,
+      "duration": "1 giờ 40 phút",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800",
+      "schedules": ["08:45", "14:20"],
+      "pricing": [{ "class": "Phổ thông", "price": 1100000 }],
+      "priceFrom": 1100000
+    },
+    {
+      "id": "flight_012",
+      "type": "Máy bay",
+      "airline": "VietJet Air",
+      "from": "VII",
+      "fromFull": "Vinh",
+      "to": "PQC",
+      "toFull": "Phú Quốc",
+      "name": "Vinh → Phú Quốc",
+      "description": "Đường bay du lịch biển mùa hè cực hot, tần suất chuyến bay hợp lý.",
+      "rating": 3.9,
+      "duration": "1 giờ 50 phút",
+      "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800",
+      "schedules": ["10:00", "16:15"],
+      "pricing": [{ "class": "Phổ thông", "price": 850000 }],
+      "priceFrom": 850000
+    },
+    {
+      "id": "flight_013",
+      "type": "Máy bay",
+      "airline": "Vietnam Airlines",
+      "from": "DAD",
+      "fromFull": "Đà Nẵng",
+      "to": "PQC",
+      "toFull": "Phú Quốc",
+      "name": "Đà Nẵng → Phú Quốc",
+      "description": "Chặng bay kết nối hai thiên đường biển đảo nghỉ dưỡng top đầu nước nhà.",
+      "rating": 4.6,
+      "duration": "1 giờ 30 phút",
+      "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800",
+      "schedules": ["09:00", "15:30"],
+      "pricing": [{ "class": "Phổ thông", "price": 1250000 }],
+      "priceFrom": 1250000
+    },
+    {
+      "id": "flight_014",
+      "type": "Máy bay",
+      "airline": "Vietravel Airlines",
+      "from": "HAN",
+      "fromFull": "Hà Nội",
+      "to": "DLI",
+      "toFull": "Đà Lạt",
+      "name": "Hà Nội → Đà Lạt",
+      "description": "Hành trình du lịch lãng mạn tới thành phố ngàn hoa với mức giá cực cạnh tranh.",
+      "rating": 4.2,
+      "duration": "1 giờ 50 phút",
+      "image": "https://images.unsplash.com/photo-1433832597046-4f10e10ac764?w=800",
+      "schedules": ["11:15", "17:00"],
+      "pricing": [{ "class": "Phổ thông", "price": 980000 }],
+      "priceFrom": 980000
+    },
+    {
+      "id": "flight_015",
+      "type": "Máy bay",
+      "airline": "Vietnam Airlines",
+      "from": "HAN",
+      "fromFull": "Hà Nội",
+      "to": "UIH",
+      "toFull": "Quy Nhơn",
+      "name": "Hà Nội → Quy Nhơn",
+      "description": "Bay an toàn, đúng giờ cùng hãng hàng không quốc gia tới bãi biển Kỳ Co trong xanh.",
+      "rating": 4.8,
+      "duration": "1 giờ 40 phút",
+      "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800",
+      "schedules": ["06:30", "12:00", "17:15"],
+      "pricing": [{ "class": "Phổ thông", "price": 1380000 }],
+      "priceFrom": 1380000
+    },
+    {
+      "id": "flight_016",
+      "type": "Máy bay",
+      "airline": "Bamboo Airways",
+      "from": "HCM",
+      "fromFull": "TP. Hồ Chí Minh",
+      "to": "THD",
+      "toFull": "Thanh Hóa",
+      "name": "HCM → Thanh Hóa",
+      "description": "Chuyến bay kết nối quê hương, dịch vụ hiếu khách chuẩn tâm nhà tre.",
+      "rating": 4.5,
+      "duration": "1 giờ 55 phút",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800",
+      "schedules": ["07:05", "14:50", "19:10"],
+      "pricing": [{ "class": "Phổ thông", "price": 1150000 }],
+      "priceFrom": 1150000
+    }
+  ],
+  "bookings": [
+    {
+      "id": "booking_001",
+      "userId": "user_001",
+      "itemId": "hotel_001",
+      "itemType": "Khách sạn",
+      "itemName": "Vinpearl Resort Nha Trang",
+      "checkIn": "2026-06-15",
+      "checkOut": "2026-06-18",
+      "numberOfPeople": 2,
+      "pricePerPerson": 2500000,
+      "totalPrice": 7500000,
+      "status": "Chờ thanh toán",
+      "createdAt": "2026-05-20T10:30:00Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "user_001",
+      "fullName": "Nguyễn Văn An",
+      "email": "an.nguyen@gmail.com",
+      "phone": "0901234567",
+      "avatar": "",
+      "createdAt": "2026-01-15T00:00:00Z"
+    }
+  ],
+  "navigation": {
+    "logo": "TravelGo",
+    "links": [
+      { "label": "Trang chủ", "path": "/" },
+      { "label": "Khách sạn", "path": "/khach-san" },
+      { "label": "Du lịch", "path": "/du-lich" },
+      { "label": "Xe tự lái", "path": "/xe-tu-lai" },
+      { "label": "Máy bay", "path": "/may-bay" }
+    ],
+    "actions": [
+      { "label": "Vé của tôi", "path": "/ve-cua-toi", "icon": "ticket" },
+      { "label": "Đăng nhập", "path": "/dang-nhap", "icon": "user" }
+    ]
+  },
+  "homepage": {
+    "hero": {
+      "title": "Khám Phá Thế Giới",
+      "subtitle": "Trải Nghiệm Đẳng Cấp",
+      "description": "Đặt khách sạn, vé du lịch, thuê xe tự lái và vé máy bay — tất cả trong một nền tảng duy nhất.",
+      "backgroundImage": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1600"
+    },
+    "searchTabs": [
+      { "key": "hotel", "label": "Khách sạn" },
+      { "key": "tour", "label": "Du lịch" },
+      { "key": "car", "label": "Xe tự lái" },
+      { "key": "flight", "label": "Máy bay" }
+    ],
+    "services": {
+      "sectionTitle": "Dịch Vụ Của Chúng Tôi"
+    }
+  },
+  "footer": {
+    "logo": "TravelGo",
+    "tagline": "Nền tảng đặt vé du lịch hàng đầu Việt Nam. Trải nghiệm dịch vụ cao cấp với giá tốt nhất.",
+    "contact": {
+      "phone": "1900 1234",
+      "email": "support@travelgo.vn",
+      "address": "TP. Hồ Chí Minh, Việt Nam"
+    },
+    "services": ["Đặt phòng khách sạn", "Tour du lịch", "Thuê xe tự lái", "Vé máy bay"],
+    "copyright": "© 2026 TravelGo. All rights reserved."
+  },
+  "bookingStatusTypes": [
+    { "id": 1, "name": "Chờ thanh toán" },
+    { "id": 2, "name": "Đã thanh toán" },
+    { "id": 3, "name": "Đã hủy" }
+  ],
+  "itemTypes": [
+    { "id": 1, "name": "Khách sạn" },
+    { "id": 2, "name": "Du lịch" },
+    { "id": 3, "name": "Xe tự lái" },
+    { "id": 4, "name": "Máy bay" }
+  ]
+}
