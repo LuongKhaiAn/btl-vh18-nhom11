@@ -19,6 +19,16 @@ body {
   background: var(--travelgo-soft);
 }
 
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-body {
+  flex: 1;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -59,6 +69,8 @@ select {
   border-radius: 18px;
   font-weight: 700;
   text-decoration: none;
+  border: none;
+  cursor: pointer;
 }
 
 .nav-logo-icon {
@@ -139,6 +151,17 @@ select {
   background: rgba(26, 39, 68, 0.12);
 }
 
+.action-pill--active,
+.action-pill--active:hover {
+  background: var(--travelgo-navy);
+  color: var(--travelgo-white);
+  border-color: var(--travelgo-navy);
+}
+
+.header-bar--light {
+  background: var(--travelgo-white);
+}
+
 .action-button {
   background: var(--travelgo-navy);
   color: var(--travelgo-white);
@@ -172,7 +195,7 @@ select {
 
 .hero-title {
   margin: 0;
-color: var(--travelgo-white);
+  color: var(--travelgo-white);
   font-family: Georgia, 'Times New Roman', serif;
   font-size: clamp(3rem, 5vw, 5.2rem);
   line-height: 0.95;
@@ -285,25 +308,6 @@ color: var(--travelgo-white);
   gap: 10px;
 }
 
-.footer-logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--travelgo-white);
-  background: var(--travelgo-navy);
-  padding: 12px 18px;
-  border-radius: 18px;
-  font-weight: 700;
-}
-
-.footer-logo-icon {
-  width: 34px;
-  height: 34px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .footer-text {
   display: flex;
   align-items: center;
@@ -344,7 +348,7 @@ color: var(--travelgo-white);
   width: 100%;
   font-weight: 800;
   display: inline-flex;
-align-items: center;
+  align-items: center;
   justify-content: center;
   gap: 12px;
   box-shadow: 0 18px 30px rgba(245, 166, 35, 0.22);
@@ -391,6 +395,17 @@ align-items: center;
   align-items: flex-end;
   justify-content: flex-start;
   padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
 }
 
 .service-icon {
@@ -402,14 +417,19 @@ align-items: center;
   align-items: center;
   justify-content: center;
   font-size: 24px;
+  position: relative;
+  z-index: 2;
 }
 
 .service-card-body {
   padding: 24px 22px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .service-card-title {
-  margin: 0 0 12px;
+  margin: 0;
   font-size: 1.15rem;
   font-weight: 700;
 }
@@ -418,7 +438,31 @@ align-items: center;
   margin: 0;
   color: #6b7280;
   line-height: 1.8;
+  flex-grow: 1;
 }
+
+.service-view-btn {
+  margin-top: 12px;
+  padding: 12px 18px;
+  background: var(--travelgo-navy);
+  color: var(--travelgo-white);
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.service-view-btn:hover {
+  background: #142040;
+  transform: translateY(-2px);
+}
+
 
 .footer-block {
   background: var(--travelgo-navy);
@@ -437,16 +481,30 @@ align-items: center;
 .footer-logo {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-size: 1.1rem;
-  font-weight: 800;
-  background: rgba(255, 255, 255, 0.08);
-  padding: 10px 14px;
-  border-radius: 14px;
+  gap: 12px;
+  width: fit-content;
+  color: var(--travelgo-white);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 18px;
+  border-radius: 16px;
+  font-weight: 700;
+  text-decoration: none;
 }
 
-.footer-logo span {
-  font-size: 22px;
+.footer-logo-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.footer-logo-text {
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
 }
 
 .footer-copy {
@@ -487,6 +545,132 @@ align-items: center;
   color: rgba(255, 255, 255, 0.78);
 }
 
+/* —— Trang danh mục (Khách sạn, Du lịch, …) —— */
+.category-page {
+  background: var(--travelgo-white);
+  padding: 32px 40px 60px;
+}
+
+.category-page-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.category-page-header {
+  margin-bottom: 28px;
+}
+
+.category-page-title {
+  margin: 0 0 8px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+
+.category-page-subtitle {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #6b7280;
+  font-weight: 400;
+}
+
+/* —— Vé của tôi —— */
+.my-tickets-page {
+  background: var(--travelgo-white);
+  padding: 28px 40px 60px;
+}
+
+.my-tickets-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.my-tickets-header {
+  margin-bottom: 20px;
+}
+
+.my-tickets-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: clamp(1.75rem, 2.8vw, 2.25rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+
+.my-tickets-title-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #f5a623;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.my-tickets-title-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: #f5a623;
+  fill: none;
+}
+
+.my-tickets-tabs {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 4px;
+  background: #eef0f4;
+  padding: 5px;
+  border-radius: 14px;
+  margin-bottom: 0;
+}
+
+.my-tickets-tab {
+  flex: 1;
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  border-radius: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #9ca3af;
+  cursor: pointer;
+  transition: color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.my-tickets-tab-label {
+  display: block;
+  padding: 10px 8px;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.my-tickets-tab:hover:not(.active) {
+  color: #6b7280;
+}
+
+.my-tickets-tab.active {
+  color: var(--travelgo-navy);
+}
+
+.my-tickets-tab.active .my-tickets-tab-label {
+  background: var(--travelgo-white);
+  font-weight: 600;
+  color: #0f172a;
+  box-shadow: 0 1px 6px rgba(15, 23, 42, 0.08);
+}
+
 @media (max-width: 940px) {
   .header-inner,
   .footer-inner,
@@ -522,6 +706,36 @@ align-items: center;
   }
 
   .hero-fields {
-grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .category-page {
+    padding: 24px 20px 48px;
+  }
+
+  .my-tickets-page {
+    padding: 24px 20px 48px;
+  }
+
+  .my-tickets-title {
+    font-size: 1.625rem;
+  }
+
+  .my-tickets-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    border-radius: 12px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .my-tickets-tab {
+    flex: 1 0 auto;
+    min-width: 0;
+    font-size: 0.8125rem;
+  }
+
+  .my-tickets-tab-label {
+    padding: 9px 6px;
+    white-space: normal;
   }
 }

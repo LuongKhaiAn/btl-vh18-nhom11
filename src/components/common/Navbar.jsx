@@ -1,59 +1,52 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import { Plane, Ticket, User } from "lucide-react";
-// Đi lùi 3 tầng: common -> components -> src -> data
-import database from "../../data/database.json";
+import { Plane, Ticket } from "lucide-react";
+import { NAV_ITEMS, getNavLabelByPage } from "../../config/pages";
 
-const iconMap = {
-  plane: <Plane />,
-  ticket: <Ticket size={16} />,
-  user: <User size={16} />,
-};
+const LIGHT_HEADER_PAGES = ["hotels", "tours", "cars", "flights", "my-tickets"];
 
-const Navbar = () => {
-  const { logo, links = [], actions = [] } = database.navigation || {};
+const Navbar = ({ currentPage = "home", onNavigate }) => {
+  const activeNavItem = getNavLabelByPage(currentPage);
+  const isLightHeader = LIGHT_HEADER_PAGES.includes(currentPage);
 
   return (
-    <header className="header-bar">
+    <header className={`header-bar ${isLightHeader ? "header-bar--light" : ""}`}>
       <div className="header-inner">
-        {/* Logo click quay về Trang chủ */}
-        <NavLink className="nav-logo" to="/">
+        <button
+          className="nav-logo"
+          type="button"
+          onClick={() => onNavigate?.("home")}
+        >
           <span className="nav-logo-icon" aria-hidden="true">
-            {iconMap.plane}
+            <Plane />
           </span>
-          <span className="nav-logo-text">{logo || "TravelGo"}</span>
-        </NavLink>
+          <span className="nav-logo-text">TravelGo</span>
+        </button>
 
-        {/* Menu điều hướng chính */}
         <nav className="nav-menu">
-          {links.map((link) => (
-            <NavLink
-              key={link.path}
-              to={link.path}
-              className={({ isActive }) => `nav-item ${isActive ? "active" : ""}`}
+          {NAV_ITEMS.map(({ label, page }) => (
+            <button
+              key={page}
+              className={`nav-item ${activeNavItem === label ? "active" : ""}`}
+              type="button"
+              onClick={() => onNavigate?.(page)}
             >
-              {link.label}
-            </NavLink>
+              {label}
+            </button>
           ))}
         </nav>
 
-        {/* Khối chức năng phụ */}
         <div className="nav-actions">
-          {actions.map((action, index) => {
-            const isPill = action.icon === "ticket";
-            const btnClass = isPill ? "action-pill" : "action-button";
-
-            return (
-              <NavLink
-                key={action.path || index}
-                to={action.path}
-                className={btnClass}
-              >
-                {action.icon && iconMap[action.icon]}
-                <span>{action.label}</span>
-              </NavLink>
-            );
-          })}
+          <button
+            className={`action-pill ${currentPage === "my-tickets" ? "action-pill--active" : ""}`}
+            type="button"
+            onClick={() => onNavigate?.("my-tickets")}
+          >
+            <Ticket size={16} />
+            Vé của tôi
+          </button>
+          <button className="action-button" type="button">
+            Đăng nhập
+          </button>
         </div>
       </div>
     </header>

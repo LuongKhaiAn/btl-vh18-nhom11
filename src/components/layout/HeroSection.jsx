@@ -9,7 +9,7 @@ const HeroSection = () => {
   const [arrivalDate, setArrivalDate] = useState("");
   const [departureDate, setDepartureDate] = useState("");
 
-  const handleSearch = event => {
+  const handleSearch = (event) => {
     event.preventDefault();
     const values = {
       category: selectedTab,
@@ -26,24 +26,19 @@ const HeroSection = () => {
       <div className="hero-overlay" />
       <div className="hero-content">
         <h1 className="hero-title">
-          Khám Phá
-          <br />
-          Thế Giới
+          Khám Phá<br />Thế Giới
         </h1>
         <h1 className="hero-title hero-highlight">
-          Trải Nghiệm
-          <br />
-          Đẳng Cấp
+          Trải Nghiệm<br />Đẳng Cấp
         </h1>
         <p className="hero-copy">
-          Đặt khách sạn, vé du lịch, thuê xe tự lái và vé máy bay — tất cả trong
-          một nền tảng duy nhất.
+          Đặt khách sạn, vé du lịch, thuê xe tự lái và vé máy bay — tất cả trong một nền tảng duy nhất.
         </p>
       </div>
 
       <form className="hero-search-card" onSubmit={handleSearch}>
         <div className="hero-tabs">
-          {tabItems.map(tab => (
+          {tabItems.map((tab) => (
             <button
               key={tab}
               type="button"
@@ -59,40 +54,34 @@ const HeroSection = () => {
           <div className="field-group">
             <span className="field-label">Điểm đến</span>
             <div className="field-input">
-              <span className="field-icon">
-                <MapPin />
-              </span>
+              <span className="field-icon"><MapPin /></span>
               <input
                 type="text"
                 placeholder="Chọn địa điểm"
                 value={destination}
-                onChange={e => setDestination(e.target.value)}
+                onChange={(e) => setDestination(e.target.value)}
               />
             </div>
           </div>
           <div className="field-group">
             <span className="field-label">Ngày đến</span>
             <div className="field-input">
-              <span className="field-icon">
-                <Calendar />
-              </span>
+              <span className="field-icon"><Calendar /></span>
               <input
                 type="date"
                 value={arrivalDate}
-                onChange={e => setArrivalDate(e.target.value)}
+                onChange={(e) => setArrivalDate(e.target.value)}
               />
             </div>
           </div>
           <div className="field-group">
             <span className="field-label">Ngày đi</span>
             <div className="field-input">
-              <span className="field-icon">
-                <Calendar />
-              </span>
+              <span className="field-icon"><Calendar /></span>
               <input
                 type="date"
                 value={departureDate}
-                onChange={e => setDepartureDate(e.target.value)}
+                onChange={(e) => setDepartureDate(e.target.value)}
               />
             </div>
           </div>

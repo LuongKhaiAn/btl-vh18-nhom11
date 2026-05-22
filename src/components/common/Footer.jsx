@@ -7,10 +7,10 @@ const Footer = () => {
       <div className="footer-inner">
         <div className="footer-column">
           <a className="footer-logo" href="#">
-            <span className="footer-logo-icon">
+            <span className="footer-logo-icon" aria-hidden="true">
               <Plane />
             </span>
-            TravelGo
+            <span className="footer-logo-text">TravelGo</span>
           </a>
           <p className="footer-copy">
             Nền tảng đặt vé du lịch hàng đầu Việt Nam, mang đến trải nghiệm sang trọng và tiện lợi cho hành trình của bạn.

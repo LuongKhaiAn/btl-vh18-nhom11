@@ -1,23 +1,39 @@
+import { useState } from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/common/Navbar";
+import Footer from "./components/common/Footer";
+import HomePage from "./page/home-page/home-menu";
+import MyTicketsPage from "./page/my-tickets/MyTicketsPage";
+import HotelsPage from "./page/hotels/HotelsPage";
+import ToursPage from "./page/tours/ToursPage";
+import CarsPage from "./page/cars/CarsPage";
+import FlightsPage from "./page/flights/FlightsPage";
 
-import HomePage from "./pages/home-page/home-menu";
-import HotelList from "./pages/Hotels/HotelList";
-import TourList from "./pages/Tours/TourList";
-import CarList from "./pages/Cars/CarList";
-import FlightList from "./pages/Flights/FlightList";
+const PAGE_COMPONENTS = {
+  home: HomePage,
+  hotels: HotelsPage,
+  tours: ToursPage,
+  cars: CarsPage,
+  flights: FlightsPage,
+  "my-tickets": MyTicketsPage,
+};
 
 function App() {
+  const [currentPage, setCurrentPage] = useState("home");
+  const PageContent = PAGE_COMPONENTS[currentPage] ?? HomePage;
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/khach-san" element={<HotelList />} />
-        <Route path="/du-lich" element={<TourList />} />
-        <Route path="/xe-tu-lai" element={<CarList />} />
-        <Route path="/may-bay" element={<FlightList />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="app-shell">
+      <Navbar currentPage={currentPage} onNavigate={setCurrentPage} />
+      <div className="app-body">
+        {currentPage === "home" ? (
+          <HomePage onNavigate={setCurrentPage} />
+        ) : (
+          <PageContent />
+        )}
+      </div>
+      <Footer />
+    </div>
   );
 }
 
