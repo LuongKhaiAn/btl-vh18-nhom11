@@ -288,9 +288,411 @@
         }
       ],
       "priceFrom": 900000
+    },
+    {
+      "id": "flight_003",
+      "type": "Máy bay",
+      "airline": "VietJet Air",
+      "from": "HAN",
+      "fromFull": "Hà Nội",
+      "to": "PQC",
+      "toFull": "Phú Quốc",
+      "name": "Hà Nội → Phú Quốc",
+      "description": "Chuyến bay du lịch tới Đảo Ngọc xanh mát, giá vé siêu tốt.",
+      "rating": 4.1,
+      "image": "https://images.unsplash.com/photo-1483450388369-9ed95738483c?w=800",
+      "duration": "2 giờ 05 phút",
+      "schedules": [
+        "06:15",
+        "11:45",
+        "15:20",
+        "19:50"
+      ],
+      "pricing": [
+        {
+          "class": "Phổ thông",
+          "price": 690000
+        }
+      ],
+      "priceFrom": 690000
+    },
+    {
+      "id": "flight_004",
+      "type": "Máy bay",
+      "airline": "Vietnam Airlines",
+      "from": "HAN",
+      "fromFull": "Hà Nội",
+      "to": "CXR",
+      "toFull": "Nha Trang",
+      "name": "Hà Nội → Nha Trang",
+      "description": "Hành trình đưa bạn đến vùng vịnh ngập tràn ánh nắng ấm áp.",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1517999144091-3d9dca6d1e43?w=800",
+      "duration": "1 giờ 55 phút",
+      "schedules": [
+        "07:10",
+        "13:40",
+        "18:25"
+      ],
+      "pricing": [
+        {
+          "class": "Phổ thông",
+          "price": 1450000
+        }
+      ],
+      "priceFrom": 1450000
+    },
+    {
+      "id": "flight_005",
+      "type": "Máy bay",
+      "airline": "Pacific Airlines",
+      "from": "HCM",
+      "fromFull": "TP. Hồ Chí Minh",
+      "to": "BMV",
+      "toFull": "Buôn Ma Thuột",
+      "name": "HCM → Buôn Ma Thuột",
+      "description": "Chuyến bay nội địa giá rẻ đến thủ phủ cà phê Tây Nguyên lộng gió.",
+      "rating": 4,
+      "image": "https://images.unsplash.com/photo-1556388158-158ea5ccacbd?w=800",
+      "duration": "1 giờ 00 phút",
+      "schedules": [
+        "06:30",
+        "15:10"
+      ],
+      "pricing": [
+        {
+          "class": "Phổ thông",
+          "price": 580000
+        }
+      ],
+      "priceFrom": 580000
+    },
+    {
+      "id": "flight_006",
+      "type": "Máy bay",
+      "airline": "Vietravel Airlines",
+      "from": "HCM",
+      "fromFull": "TP. Hồ Chí Minh",
+      "to": "HUI",
+      "toFull": "Huế",
+      "name": "HCM → Huế",
+      "description": "Hành trình khám phá cố đô kinh cung trọn gói, giờ bay thích hợp.",
+      "rating": 4.3,
+      "image": "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=800",
+      "duration": "1 giờ 30 phút",
+      "schedules": [
+        "08:00",
+        "16:45"
+      ],
+      "pricing": [
+        {
+          "class": "Phổ thông",
+          "price": 750000
+        }
+      ],
+      "priceFrom": 750000
+    },
+    {
+      "id": "flight_007",
+      "type": "Máy bay",
+      "airline": "Vietnam Airlines",
+      "from": "HCM",
+      "fromFull": "TP. Hồ Chí Minh",
+      "to": "DLI",
+      "toFull": "Đà Lạt",
+      "name": "HCM → Đà Lạt",
+      "description": "Chuyến bay siêu nhanh trốn nóng sài gòn lên với phố sương mù.",
+      "rating": 4.6,
+      "duration": "50 phút",
+      "image": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=800",
+      "schedules": [
+        "07:30",
+        "11:20",
+        "16:00",
+        "21:10"
+      ],
+      "pricing": [
+        {
+          "class": "Phổ thông",
+          "price": 890000
+        }
+      ],
+      "priceFrom": 890000
+    },
+    {
+      "id": "flight_008",
+      "type": "Máy bay",
+      "airline": "Bamboo Airways",
+      "from": "HAN",
+      "fromFull": "Hà Nội",
+      "to": "VCS",
+      "toFull": "Côn Đảo",
+      "name": "Hà Nội → Côn Đảo",
+      "description": "Đường bay thẳng bằng phản lực hiện đại tới vùng đảo linh thiêng.",
+      "rating": 4.8,
+      "duration": "2 giờ 20 phút",
+      "image": "https://images.unsplash.com/photo-1473862170180-84427c485aca?w=800",
+      "schedules": [
+        "06:45",
+        "13:15"
+      ],
+      "pricing": [
+        {
+          "class": "Phổ thông",
+          "price": 2600000
+        }
+      ],
+      "priceFrom": 2600000
+    },
+    {
+      "id": "flight_009",
+      "type": "Máy bay",
+      "airline": "VietJet Air",
+      "from": "HCM",
+      "fromFull": "TP. Hồ Chí Minh",
+      "to": "HPH",
+      "toFull": "Hải Phòng",
+      "name": "HCM → Hải Phòng",
+      "description": "Kết nối thành phố cảng hoa phượng đỏ rực rỡ với đầu cầu kinh tế phía nam.",
+      "rating": 4,
+      "duration": "2 giờ 00 phút",
+      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800",
+      "schedules": [
+        "05:30",
+        "10:15",
+        "17:40",
+        "22:00"
+      ],
+      "pricing": [
+        {
+          "class": "Phổ thông",
+          "price": 790000
+        }
+      ],
+      "priceFrom": 790000
+    },
+    {
+      "id": "flight_010",
+      "type": "Máy bay",
+      "airline": "Vietnam Airlines",
+      "from": "VCA",
+      "fromFull": "Cần Thơ",
+      "to": "HAN",
+      "toFull": "Hà Nội",
+      "name": "Cần Thơ → Hà Nội",
+      "description": "Đường bay huyết mạch gắn kết thủ đô yêu dấu với miền tây sông nước.",
+      "rating": 4.7,
+      "duration": "2 giờ 15 phút",
+      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800",
+      "schedules": [
+        "09:15",
+        "19:30"
+      ],
+      "pricing": [
+        {
+          "class": "Phổ thông",
+          "price": 1650000
+        }
+      ],
+      "priceFrom": 1650000
+    },
+    {
+      "id": "flight_011",
+      "type": "Máy bay",
+      "airline": "Bamboo Airways",
+      "from": "HCM",
+      "fromFull": "TP. Hồ Chí Minh",
+      "to": "VDH",
+      "toFull": "Quảng Bình",
+      "name": "HCM → Quảng Bình",
+      "description": "Bay thẳng đến vương quốc hang động thế giới, tiết kiệm thời gian di chuyển.",
+      "rating": 4.5,
+      "duration": "1 giờ 40 phút",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800",
+      "schedules": [
+        "08:45",
+        "14:20"
+      ],
+      "pricing": [
+        {
+          "class": "Phổ thông",
+          "price": 1100000
+        }
+      ],
+      "priceFrom": 1100000
+    },
+    {
+      "id": "flight_012",
+      "type": "Máy bay",
+      "airline": "VietJet Air",
+      "from": "VII",
+      "fromFull": "Vinh",
+      "to": "PQC",
+      "toFull": "Phú Quốc",
+      "name": "Vinh → Phú Quốc",
+      "description": "Đường bay du lịch biển mùa hè cực hot, tần suất chuyến bay hợp lý.",
+      "rating": 3.9,
+      "duration": "1 giờ 50 phút",
+      "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800",
+      "schedules": [
+        "10:00",
+        "16:15"
+      ],
+      "pricing": [
+        {
+          "class": "Phổ thông",
+          "price": 850000
+        }
+      ],
+      "priceFrom": 850000
+    },
+    {
+      "id": "flight_013",
+      "type": "Máy bay",
+      "airline": "Vietnam Airlines",
+      "from": "DAD",
+      "fromFull": "Đà Nẵng",
+      "to": "PQC",
+      "toFull": "Phú Quốc",
+      "name": "Đà Nẵng → Phú Quốc",
+      "description": "Chặng bay kết nối hai thiên đường biển đảo nghỉ dưỡng top đầu nước nhà.",
+      "rating": 4.6,
+      "duration": "1 giờ 30 phút",
+      "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800",
+      "schedules": [
+        "09:00",
+        "15:30"
+      ],
+      "pricing": [
+        {
+          "class": "Phổ thông",
+          "price": 1250000
+        }
+      ],
+      "priceFrom": 1250000
+    },
+    {
+      "id": "flight_014",
+      "type": "Máy bay",
+      "airline": "Vietravel Airlines",
+      "from": "HAN",
+      "fromFull": "Hà Nội",
+      "to": "DLI",
+      "toFull": "Đà Lạt",
+      "name": "Hà Nội → Đà Lạt",
+      "description": "Hành trình du lịch lãng mạn tới thành phố ngàn hoa với mức giá cực cạnh tranh.",
+      "rating": 4.2,
+      "duration": "1 giờ 50 phút",
+      "image": "https://images.unsplash.com/photo-1433832597046-4f10e10ac764?w=800",
+      "schedules": [
+        "11:15",
+        "17:00"
+      ],
+      "pricing": [
+        {
+          "class": "Phổ thông",
+          "price": 980000
+        }
+      ],
+      "priceFrom": 980000
+    },
+    {
+      "id": "flight_015",
+      "type": "Máy bay",
+      "airline": "Vietnam Airlines",
+      "from": "HAN",
+      "fromFull": "Hà Nội",
+      "to": "UIH",
+      "toFull": "Quy Nhơn",
+      "name": "Hà Nội → Quy Nhơn",
+      "description": "Bay an toàn, đúng giờ cùng hãng hàng không quốc gia tới bãi biển Kỳ Co trong xanh.",
+      "rating": 4.8,
+      "duration": "1 giờ 40 phút",
+      "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800",
+      "schedules": [
+        "06:30",
+        "12:00",
+        "17:15"
+      ],
+      "pricing": [
+        {
+          "class": "Phổ thông",
+          "price": 1380000
+        }
+      ],
+      "priceFrom": 1380000
+    },
+    {
+      "id": "flight_016",
+      "type": "Máy bay",
+      "airline": "Bamboo Airways",
+      "from": "HCM",
+      "fromFull": "TP. Hồ Chí Minh",
+      "to": "THD",
+      "toFull": "Thanh Hóa",
+      "name": "HCM → Thanh Hóa",
+      "description": "Chuyến bay kết nối quê hương, dịch vụ hiếu khách chuẩn tâm nhà tre.",
+      "rating": 4.5,
+      "duration": "1 giờ 55 phút",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800",
+      "schedules": [
+        "07:05",
+        "14:50",
+        "19:10"
+      ],
+      "pricing": [
+        {
+          "class": "Phổ thông",
+          "price": 1150000
+        }
+      ],
+      "priceFrom": 1150000
     }
   ],
-  "bookings": [],
+  "bookings": [
+    {
+      "id": "booking_001",
+      "userId": "user_001",
+      "itemId": "hotel_001",
+      "itemType": "Khách sạn",
+      "itemName": "Vinpearl Resort Nha Trang",
+      "checkIn": "2026-06-15",
+      "checkOut": "2026-06-18",
+      "numberOfPeople": 2,
+      "pricePerPerson": 2500000,
+      "totalPrice": 7500000,
+      "status": "Đã hủy",
+      "createdAt": "2026-05-20T10:30:00Z"
+    },
+    {
+      "userId": "user_001",
+      "itemId": "hotel_001",
+      "itemType": "Khách sạn",
+      "itemName": "Vinpearl Resort Nha Trang",
+      "checkIn": "2026-05-23",
+      "checkOut": "2026-05-31",
+      "numberOfPeople": 2,
+      "pricePerPerson": 2500000,
+      "totalPrice": 5000000,
+      "status": "Đã thanh toán",
+      "createdAt": "2026-05-23T00:46:09.492Z",
+      "id": "nweZ9kZ4taA"
+    },
+    {
+      "userId": "user_001",
+      "itemId": "car_004",
+      "itemType": "Xe tự lái",
+      "itemName": "VinFast VF8 2024",
+      "checkIn": "2026-05-23",
+      "checkOut": "2026-06-23",
+      "numberOfPeople": 1,
+      "pricePerPerson": 34100000,
+      "totalPrice": 34100000,
+      "status": "Chờ thanh toán",
+      "createdAt": "2026-05-23T00:46:33.351Z",
+      "id": "cXUIGlrvj1I"
+    }
+  ],
   "users": [
     {
       "id": "user_001",

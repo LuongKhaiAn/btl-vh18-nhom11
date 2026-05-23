@@ -1,5 +1,5 @@
 import React from "react";
-import DataBase from "../../database.json";
+import DataBase from "../../src/database.json";
 import { PAGE_META } from "../../config/pages";
 
 const CategoryPage = ({ pageId }) => {
