@@ -1,5 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
+<<<<<<< Updated upstream
 import Navbar from "./components/common/Navbar";
 import Footer from "./components/common/Footer";
 import PageTransition from "./components/common/PageTransition";
@@ -15,8 +16,12 @@ import { ROUTES } from "./config/pages";
 
 function AppContent() {
   const location = useLocation();
+=======
+import HomeNav from "./pages/home-page/home-nav";
+>>>>>>> Stashed changes
 
   return (
+<<<<<<< Updated upstream
     <div className="app-shell">
       <ScrollToTop />
       <Navbar />
@@ -56,6 +61,11 @@ function AppContent() {
       </div>
       <Footer />
     </div>
+=======
+    <>
+      <HomeNav/>
+    </>
+>>>>>>> Stashed changes
   );
 }
 
