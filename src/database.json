@@ -688,9 +688,23 @@
       "numberOfPeople": 1,
       "pricePerPerson": 34100000,
       "totalPrice": 34100000,
-      "status": "Chờ thanh toán",
+      "status": "Đã hủy",
       "createdAt": "2026-05-23T00:46:33.351Z",
       "id": "cXUIGlrvj1I"
+    },
+    {
+      "userId": "user_001",
+      "itemId": "hotel_001",
+      "itemType": "Khách sạn",
+      "itemName": "Vinpearl Resort Nha Trang",
+      "checkIn": "2026-05-18",
+      "checkOut": "2026-05-22",
+      "numberOfPeople": 2,
+      "pricePerPerson": 2500000,
+      "totalPrice": 5000000,
+      "status": "Chờ thanh toán",
+      "createdAt": "2026-05-23T02:03:33.959Z",
+      "id": "vaTIPnuYoi4"
     }
   ],
   "users": [
