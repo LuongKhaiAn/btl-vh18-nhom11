@@ -18,7 +18,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "server": "json-server --watch database.json --port 9999",
+    "server": "npx --yes kill-port 9999 && json-server --watch src/database.json --port 9999",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eslint:fix": "yarn eslint --fix",
@@ -49,6 +49,7 @@
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-unused-imports": "^4.4.1"
+    "eslint-plugin-unused-imports": "^4.4.1",
+    "json-server": "^1.0.0-beta.15"
   }
 }
