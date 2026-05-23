@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Bed, Globe2, Car, Plane, ChevronRight } from "lucide-react";
-import DataBase from "../../DataBase.json";
+import database from "../../database.json";
 import { SERVICE_PATHS } from "../../config/pages";
 
 const ServiceSection = () => {
@@ -14,28 +14,28 @@ const ServiceSection = () => {
       icon: <Bed />,
       title: "Khách sạn",
       description: "Nghỉ dưỡng cao cấp",
-      data: DataBase.hotels.slice(0, 1),
+      data: database.hotels.slice(0, 1),
     },
     {
       key: "tours",
       icon: <Globe2 />,
       title: "Du lịch",
       description: "Tour trọn gói",
-      data: DataBase.tours.slice(0, 1),
+      data: database.tours.slice(0, 1),
     },
     {
       key: "cars",
       icon: <Car />,
       title: "Xe tự lái",
       description: "Tự do khám phá",
-      data: DataBase.cars.slice(0, 1),
+      data: database.cars.slice(0, 1),
     },
     {
       key: "flights",
       icon: <Plane />,
       title: "Máy bay",
       description: "Bay tiện lợi",
-      data: DataBase.flights.slice(0, 1),
+      data: database.flights.slice(0, 1),
     },
   ];
 

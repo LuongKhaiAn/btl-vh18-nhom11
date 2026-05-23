@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { NavLink, Navigate, useLocation } from "react-router-dom";
 import { Ticket, Clock, CreditCard, CheckCircle2, XCircle, Trash2 } from "lucide-react";
 import axios from "axios";
-import DataBase from "../../DataBase.json";
+import database from "../../database.json";
 import { API_BASE } from "../../config/products";
 import {
   MY_TICKET_TABS,
@@ -133,7 +133,7 @@ const MyTicketsPage = () => {
       })
       .catch(() => {
         setBookings(
-          DataBase.bookings.filter(
+          database.bookings.filter(
             (booking) => booking.userId === CURRENT_USER_ID,
           ),
         );

@@ -40,7 +40,7 @@ function TourList() {
 
   return (
     <div className="text-center mt-3 container">
-      <h1>All Tours</h1>
+      <h1>Danh sách Tours du lịch</h1>
 
       <Row className="mb-3 justify-content-center">
         <Col md={6}>
@@ -76,11 +76,11 @@ function TourList() {
                 <h6 className="fw-bold text-truncate">{t.name}</h6>
 
                 <p className="mb-1">
-                  <b>Location:</b> {t.location}
+                  <b>Vị trí:</b> {t.location}
                 </p>
 
                 <p className="mb-1">
-                  <b>Duration:</b> {t.duration}
+                  <b>Thời lượng:</b> {t.duration}
                 </p>
 
                 <p className="mb-1">
@@ -88,7 +88,7 @@ function TourList() {
                 </p>
 
                 <p className="mb-3">
-                  <b>Price From:</b> <span className="text-danger fw-bold">{formatPrice(t.priceFrom)}</span>
+                  <b>Giá:</b> <span className="text-danger fw-bold">{formatPrice(t.priceFrom)}</span>
                 </p>
 
                 <Button
